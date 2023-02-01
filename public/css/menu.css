@@ -218,7 +218,7 @@ div#market-bar>#market_panel>div,
 div#office-bar>#office_panel>div
 {
     position: absolute;
-    background:#fff;
+    background:yellow;
     padding:20px;
     max-height: 600px !important;
     height: 600px;
@@ -271,13 +271,16 @@ div#office-bar>#office_btn_holder>button
 /* panel properties */
 .market_tabs{
     position:relative;
-    top:40%;
+    top:20%;
+    /* top:40%; */
     left:50%;
     transform:translate(-50%,-50%);
     width:1280px;
-    height:500px;
+    /* height:500px; */
+    max-height:1300px;
     display: flex;
     overflow:hidden;
+   
 }
 
 .market_tabs .tab-header{
