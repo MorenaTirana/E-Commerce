@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova | Home Page</title>
+
+  <!--Cinzel font family code  --> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://kit.fontawesome.com/10f6dbc809.js" crossorigin="anonymous"></script> 
+
+  <!--Iconscout CDN-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+  
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"> <!-- css page for the home page-->
+<style>
+   #face-banner {
+    background-image: url("../img/Face.png");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: top 0 center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    top:0;
+}
+#face-banner .container{
+    margin-left: 5%;
+}
+#face-banner h4 {
+    color: #190c05;
+    font-size: 30px;
+}
+
+#face-banner h1 {
+    color: #fff;
+    font-size: 35px;
+}
+
+#face-banner button {
+    background-color: #fb774b;
+    border: none;
+    height: 2rem;
+    width: 6rem;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: #fff;
+}
+#face-banner button:hover{
+    background-color: #000;
+}
+#face-banner button a{
+    color: #fff;
+    text-decoration: none;
+}
+</style>
+</head>
+<body>
+    
+    <!---navbar -->
+    <nav class="navbar"></nav>    
+
+    <!--banner-->
+    
+    <section id="face-banner" class="face-poster">
+        <div class="container">
+            <h4>MID SEASON’S SALE</h4>
+            <h1>Autumn Collection<br>UP TO 20% OFF</h1>
+            <button class="text-uppercase"><a href="shopNow.html">Shop Now</a></button>
+        </div>
+    </section>
+
+
+    <!---best selling products-->
+    <section class="best-selling-product-section">
+        <h1 class="section-title">best selling products</h1>
+        <div class="product-container">
+            <div class="product-card">
+                <img src="img/Deo1.png" class="product-img" alt="">
+                <p class="product-name"><a href="cream.html">Cream→</a></p>
+            </div>
+            <div class="product-card">
+                <img src="img/Deo2.png" class="product-img" alt="">
+                <p class="product-name"> <a href="serum.html">Serum→</a></p>
+            </div>
+            <div class="product-card">
+                <img src="img/Deo1.png" class="product-img" alt="">
+                <p class="product-name"><a href="deodorant.html">Deodorant→</a></p>
+            </div>
+            <div class="product-card">
+                <img src="img/Deo2.png" class="product-img" alt="">
+                <p class="product-name"><a href="perfume.html">Perfume→</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!---mid section-->
+    <section class="mid-section">
+        <div class="section-item-container">
+            <img src="img/bg-2.png" class="section-bg" alt="">
+            <div class="section-info">
+                <h1 class="title">face skincare <span>products</span> of this season</h1>
+                <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente similique explicabo, pariatur sunt facere adipisci!</p>
+            </div>
+        </div>
+    </section>
+    
+    <!---image collage section-->
+    <section class="image-mid-section">
+        <div class="image-collage">
+            <div class="image-collection">
+                <img src="img/poster-1.png" class="collage-img" alt="">
+                <img src="img/poster-2.png" class="collage-img" alt="">
+                <img src="img/poster-3.png" class="collage-img" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--- review section -->
+    <section class="review-section">
+        <h1 class="section-title"> what our <span>customers</span> say about us</h1>
+        <div class="review-container">
+            <div class="review-card">
+                <div class="user-dp" data-rating="4.9"><img src="img/user 1.png" alt=""></div>
+                <h2 class="review-title">best quality more than my expectations</h2>
+                <p class="review"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque atque iure explicabo tenetur voluptas sequi.</p>
+            </div>
+            <div class="review-card">
+                <div class="user-dp" data-rating="4.9"><img src="img/user 2.png" alt=""></div>
+                <h2 class="review-title">on time delivery with best packaging</h2>
+                <p class="review"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque atque iure explicabo tenetur voluptas sequi.</p>
+            </div>
+            <div class="review-card">
+                <div class="user-dp" data-rating="4.9"><img src="img/user 3.png" alt=""></div>
+                <h2 class="review-title">very helpful customer support</h2>
+                <p class="review"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque atque iure explicabo tenetur voluptas sequi.</p>
+            </div>
+            <div class="review-card">
+                <div class="user-dp" data-rating="4.9"><img src="img/user 4.png" alt=""></div>
+                <h2 class="review-title">very easy to refund/return products</h2>
+                <p class="review"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque atque iure explicabo tenetur voluptas sequi.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--end section-->
+    <section class="end-section">
+        <div class="section-item-container">
+            <img src="img/bg-3.png" class="section-bg" alt="">
+            <div class="section-info">
+                <h1 class="title">order <span>now</span></h1>
+                <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente similique explicabo, pariatur sunt facere adipisci!</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <div class="footer-container"> 
+              <div class="row1">
+               <img width="100" src="img/logo1.png">
+               </div>
+           
+             <div class="row">
+                  <div class="footer-col-1">
+                     <h3>COUNTRIES</H3> 
+                     <ul>
+                         <li><img width="15" src="img/Swedishflag.png"> Sweden</li>
+                         <li><img width="15" src="img/Chineseflag.png"> China </li>
+                         <li><img width="15" src="img/HongKongflag.png">Hong Kong</li>
+                     </ul>           
+                   </div>
+               
+                  <div class="footer-col-3">
+                       <h3>Useful links</h3>
+                           <ul>
+                           <li>Coupons</li>
+                           <li>Blog Post</li>
+                           <li>Return Policy</li>
+                           <li>Contact Us</li>
+                          </ul>
+                  </div>
+                  <div class="footer-col-4">
+                       <h3> Follow us</h3>
+                            <ul>
+                                <li>Facebook</li>
+                                <li>Twitter</li>
+                                <li>Instagram</li>
+                                <li>Youtube</li>
+                            </ul>
+                   </div>   
+              </div>
+              
+              <p class="copyright">  © Copyright 2022</p>
+              <div class = "footer-item">
+             
+                <ul class = "social-links">
+                  <li>
+                      <a href = "#">
+                          <i class = "fab fa-facebook-f"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a href = "#">
+                          <i class = "fab fa-instagram"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a href = "#">
+                          <i class = "fab fa-twitter"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a href = "#">
+                          <i class = "fab fa-pinterest"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a href = "#">
+                          <i class = "fab fa-google-plus"></i>
+                      </a>
+                  </li>
+              </ul>
+                </div>
+         </div>   
+    </div>              
+       
+
+    <script src="js/nav.js"></script>
+    <script src="js/home.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .rotateMe {
+  transition: all 0.8s ease;
+  transform: rotate(90deg);
+}
+  </style>
+</head>
+<body>
+  <div id="yabanner">
+    <img id="rotateMe" src="https://images.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+  </div>
+  <button id="rotateButton">Click Me</button>
+
+  <script>
+ console.log('rotate');
+function rotateMe() {
+  console.log('rotating');
+  var element = document.getElementById('rotateMe');
+  element.classList.add("rotateMe");
+}
+
+document.getElementById("rotateButton").addEventListener("click", rotateMe);
+if(rotateMe()){
+  window.location.href = "index.html";
+}
+  </script>
+  
+</body>
+</html>

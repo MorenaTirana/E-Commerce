@@ -1,0 +1,218 @@
+
+.content-explore{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top:50%;
+    left: 42%;
+    z-index: 2;
+}
+
+
+/*
+.content-explore button {
+    color: #fbfcfd;
+    margin-top: 75%;
+    margin-left: -50%;
+    padding: 20px 25px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.content-explore a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: bold;
+}
+*/
+/*
+.explore{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 200%;
+    z-index: 99;
+    margin-top: 50%;
+  }
+  
+  .effect1 {
+    color: #222;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 10px;
+    position: relative;
+    padding: 1px 5px 1px 2px;
+    top:70%;
+    z-index: 99;
+  
+    -webkit-transition: all 0.3s;
+  
+    -o-transition: all 0.3s;
+  
+    transition: all 0.3s;
+  
+    -webkit-transform: scale(3);
+  
+        -ms-transform: scale(3);
+  
+            transform: scale(3); /*change scale(3) to scale(1)*
+  }
+  
+  .effect1 .bg {
+    background: #222;
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -1px;
+    z-index: -1;
+  
+    -webkit-transition: all 0.3s;
+  
+    -o-transition: all 0.3s;
+  
+    transition: all 0.3s;
+  }
+  
+  .effect1:hover {
+    padding-right: 20px;
+    color: #fff;
+  }
+  
+  .effect1:hover .bg {
+    height: 100%;
+    width: 100%;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+  }
+  
+  .effect1 .bg:before, .effect1 .bg:after {
+    content: '';
+    height: 2px;
+    width: 10px;
+    background: #222;
+    position: absolute;
+    right: -2px;      
+    -webkit-transition: all 0.3s;      
+    -o-transition: all 0.3s;      
+    transition: all 0.3s;
+  }
+  
+  .effect1 .bg:before {
+    bottom: 3px;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .effect1 .bg:after{
+    top: 3px;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  
+  .effect1:hover .bg:before,
+  .effect1:hover .bg:after{
+    right: 0;
+  }
+  
+  .effect1:hover .bg:before{
+    bottom: 6px;
+  }
+  
+  .effect1:hover .bg:after{
+    top: 6px;
+  }
+*/
+.square {
+  border: 1px solid #9f7f5e;
+  height: 56px;
+  width: 56px;
+  display: block;
+  margin-top: 200px;
+  margin-left: -50%;
+  transform: rotate(45deg);
+  overflow: hidden;
+  
+-webkit-transition: all 500ms cubic-bezier(0.970, 0.000, 0.395, 0.995); 
+-moz-transition: all 500ms cubic-bezier(0.970, 0.000, 0.395, 0.995); 
+-o-transition: all 500ms cubic-bezier(0.970, 0.000, 0.395, 0.995); 
+  transition: all 500ms cubic-bezier(0.970, 0.000, 0.395, 0.995); /* custom */
+}
+ a{
+  text-decoration: none;
+  color:#fff;
+}
+
+
+.square:hover {
+  transform: rotate(135deg);
+  border: 1px solid #fff;
+}
+
+.square:hover a {
+  transform: rotate(-135deg)
+}
+
+.square a {
+  height: 2px;
+  width: 14px;
+  background: #9f7f5e;
+  display: block;
+  margin-bottom: 2px;
+  
+-webkit-transition: all 500ms cubic-bezier(0.970, 0.000, 0.395, 0.995); 
+-moz-transition: all 500ms cubic-bezier(0.970, 0.000, 0.395, 0.995); 
+-o-transition: all 500ms cubic-bezier(0.970, 0.000, 0.395, 0.995); 
+  transition: all 500ms cubic-bezier(0.970, 0.000, 0.395, 0.995); /* custom */
+}
+
+.square a:after {
+  content: "";
+  height: 2px;
+  width: 14px;
+  position: absolute;
+  background: #fff;
+  left: -19px;
+  
+-webkit-transition: all 500ms cubic-bezier(0.970, 0.000, 0.395, 0.995); 
+-moz-transition: all 500ms cubic-bezier(0.970, 0.000, 0.395, 0.995); 
+-o-transition: all 500ms cubic-bezier(0.970, 0.000, 0.395, 0.995); 
+  transition: all 500ms cubic-bezier(0.970, 0.000, 0.395, 0.995); /* custom */
+}
+
+.square:hover a {
+  margin-left: 26px;
+}
+
+.square:hover a:after {
+  left: 5px;
+}
+
+.square a:nth-of-type(1),
+.square a:nth-of-type(1):after {
+  transition-delay: 0.1s;
+}
+
+.square span:nth-of-type(2),
+.square span:nth-of-type(2):after {
+  transition-delay: 0.2s;
+}
+
+.square span:nth-of-type(3),
+.square span:nth-of-type(3):after {
+  transition-delay: 0.3s;
+}
+
+
