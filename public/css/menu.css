@@ -217,11 +217,8 @@ div#ltde-bar>#ltde_panel>div,
 div#market-bar>#market_panel>div,
 div#office-bar>#office_panel>div
 {
+    /* doesn't affect menu' s height */
     position: absolute;
-    background:yellow;
-    padding:20px;
-    max-height: 600px !important;
-    height: 600px;
     width:1275px;
     margin-left:2px;
     margin-bottom:2px;
@@ -265,22 +262,18 @@ div#office-bar>#office_btn_holder>button
     left:750px;
 }
 
-.tab{
-    background-color: pink;
-}
 /* panel properties */
 .market_tabs{
-    position:relative;
-    top:20%;
-    /* top:40%; */
+    padding-top: 50px;
+    position:absolute;
+    top:80%; 
     left:50%;
-    transform:translate(-50%,-50%);
+    transform:translate(-50%,-5%);
     width:1280px;
-    /* height:500px; */
-    max-height:1300px;
+    height:800px !important; 
     display: flex;
     overflow:hidden;
-   
+    background-color: #fff;
 }
 
 .market_tabs .tab-header{
@@ -309,6 +302,7 @@ div#office-bar>#office_btn_holder>button
         color: #d5be8b;
 }
 
+/* the Underline function for each list text */
 .tab-header>div::after{ 
     content:" ";
     background: #d5be8b;
@@ -322,13 +316,123 @@ div#office-bar>#office_btn_holder>button
 }  
 
 .tab-header>div.active::after{ 
-    width: 90%;
+    width: 65px;
+}
+
+.tab-header>.face::after{
+    width:0%;
+    transition:0.2s linear;
+}
+
+.tab-header>.face.active::after{
+    width: 57px;
+}
+
+.tab-header>.feet::after
+{
+    width:0%;
+    transition:0.2s linear;
+}
+
+.tab-header>.feet.active::after{
+    width: 55px;
+}
+
+.col-1 ul li a.hand-lotion::after{
+    content:"";
+    width:0%;
+    height:2px;
+    background-color: #d5be8b;
+    display:block;
+    margin-right:100px;
+    transition:0.2s;
+}
+
+ .col-1 ul li a.hand-lotion:hover::after{
+    width:75px;
+    margin-left: -10px;
+}
+
+.col-1 ul li a.hand-soap::after{
+    content:"";
+    width:0%;
+    height:2px;
+    background-color: #d5be8b;
+    display:block;
+    margin-right:100px;
+    transition:0.2s;
+}
+
+ .col-1 ul li a.hand-soap:hover::after{
+    width:55px;
+    margin-left: -10px;
+}
+
+.col-1 ul li a.body-cleanser::after{
+    content:"";
+    width:0%;
+    height:2px;
+    background-color: #d5be8b;
+    display:block;
+    margin-right:100px;
+    transition:0.1s;
+}
+
+ .col-1 ul li a.body-cleanser:hover::after{
+    width:83px;
+    margin-left:-5px;
+}
+
+.col-1 ul li a.body-oil::after{
+    content:"";
+    width:0%;
+    height:2px;
+    background-color: #d5be8b;
+    display:block;
+    margin-right:100px;
+    transition:0.1s;
+}
+
+ .col-1 ul li a.body-oil:hover::after{
+    width:35px;
+    margin-left:-5px;
+}
+
+.col-1 ul li a.body-scrub::after{
+    content:" ";
+    width:0%;
+    height:2px;
+    background-color: #d5be8b;
+    display:block;
+    margin-right:100px;
+    transition:0.1s;
+}
+
+ .col-1 ul li a.body-scrub:hover::after{
+    content:" ";
+    width:55px;
+    margin-left:-5px;
+}
+
+.col-1 ul li a.body-protective::after{
+    content:"";
+    width:0%;
+    height:2px;
+    background-color: #d5be8b;
+    display:block;
+    margin-right:100px;
+    transition:0.1s;
+}
+
+ .col-1 ul li a.body-protective:hover::after{
+    content: " ";
+    width:95px;
+    margin-left:-5px;
 }
 
 .market_tabs .tab-content{
     flex:1;
     position:relative;
-    background-color:#fff;
     padding-left: 200px;
 }
 
@@ -348,7 +452,7 @@ div#office-bar>#office_btn_holder>button
 
 .col-1 img{
     width:670px;
-    height:550px;
+    height:600px;
     left:350px;
     position:absolute;
     top:-20%;
@@ -390,12 +494,12 @@ div#office-bar>#office_btn_holder>button
 }
 
  .col-1 ul li a:hover::after{
-    width:30%;
+    width:10%;
 }
 
 .col-1 ul li .sub_menu_2{
         position: absolute;
-        background:white;
+        background:#fff;
         width:100%;
         left:200px;
         top:0;

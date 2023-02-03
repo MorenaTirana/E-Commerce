@@ -2,18 +2,17 @@
 const navbar = document.querySelector('.navbar');
 
 window.addEventListener('scroll', () => {
-    if(scrollY >= 180){
-        navbar.classList.add('bg');
-    } else{
-        navbar.classList.remove('bg');
-    }
-})
-
+  if (scrollY >= 180) {
+    navbar.classList.add('bg');
+  } else {
+    navbar.classList.remove('bg');
+  }
+});
 
 const createNavbar = () => {
-    let navbar = document.querySelector('.navbar');
+  let navbar = document.querySelector('.navbar');
 
-    navbar.innerHTML += `
+  navbar.innerHTML += `
          <a href="index.html"> 
             <img src="img/logo_1.png" class="logo"> 
          </a>
@@ -52,8 +51,8 @@ const createNavbar = () => {
                 <div class="tab-header">
                     <div class="active">Hand</div>
                     <div>Body</div>
-                    <div>Face</div>
-                    <div>Feet</div>
+                    <div class="face">Face</div>
+                    <div class="feet">Feet</div>
                 </div>
                 <div class="tab-content">
                     <div class="active">
@@ -61,14 +60,14 @@ const createNavbar = () => {
                             <div class="sub_menu_1">
                                 <div class="col-1">
                                     <ul>
-                                        <li><a href="Hand Lotion.html">Lotion</a>
+                                        <li><a href="Hand Lotion.html" class="hand-lotion">Lotion</a>
                                             <div class="sub_menu_2">
                                                 <div class="col-2">
                                                     <img src="img/Hand Lotion.png">                                                                                                               </div>
                                                 </div> 
                                                                                                                                                                          
                                         </li>
-                                        <li><a href="Soap.html">Soap</a>
+                                        <li><a href="Soap.html" class="hand-soap">Soap</a>
                                             <div class="sub_menu_2">
                                                 <div class="col-2">
                                                     <img src="img/Hand Soap.png">
@@ -89,28 +88,28 @@ const createNavbar = () => {
                             <div class="sub_menu_1">
                                 <div class="col-1">
                                     <ul>
-                                        <li><a href="bodyCleanser.html">Cleanser</a>
+                                        <li><a href="bodyCleanser.html" class="body-cleanser">Cleanser</a>
                                             <div class="sub_menu_2">
                                                 <div class="col-2">
                                                     <img src="img/Body Cleanser.png">                                                                                                               </div>
                                                 </div> 
                                                                                                                  
                                         </li>
-                                        <li><a href="bodyOil.html">Oil</a>
+                                        <li><a href="bodyOil.html" class="body-oil">Oil</a>
                                             <div class="sub_menu_2">
                                                 <div class="col-2">
                                                     <img src="img/Body Oil.jpg">
                                                 </div>
                                             </div>
                                         </li>
-                                        <li><a href="bodyScrub.html">Scrub</a>
+                                        <li><a href="bodyScrub.html" class="body-scrub">Scrub</a>
                                             <div class="sub_menu_2">
                                                 <div class="col-2">
                                                     <img src="img/Body Scrub.png">                                                                                                               </div>
                                                 </div> 
                                                                                                             
                                         </li>
-                                        <li><a href="bodyProtective.html">Protective</a>
+                                        <li><a href="bodyProtective.html" class="body-protective">Protective</a>
                                             <div class="sub_menu_2">
                                                 <div class="col-2">
                                                     <img src="img/Body Protective.png">
@@ -246,7 +245,7 @@ const createNavbar = () => {
                                     <li><a href="#">Deo 2</a>
                                         <div class="sub_menu_2">
                                             <div class="col-2">
-                                                <img src="img/Body Oil.jpg">
+                                                <img src="img/Body Scrub.png">
                                             </div>
                                         </div>
                                     </li>
@@ -527,152 +526,135 @@ const createNavbar = () => {
         </div>
     </div>
 </div>
-   `
-}
+   `;
+};
 
 createNavbar();
 
 //menu bar functions
-function toggleHuman(x)
-{
-    var panel = document.getElementById(x),
-    maxH = "480px";
+function toggleHuman(x) {
+  var panel = document.getElementById(x),
+    maxH = '570px';
 
-    if(panel.style.height == maxH)
-    {
-        panel.style.height = "0px";
-    } 
-    else
-    {
-        panel.style.height = maxH;
-    }
+  if (panel.style.height == maxH) {
+    panel.style.height = '0px';
+  } else {
+    panel.style.height = maxH;
+  }
 }
-function toggleScent(x)
-{
-    var panel=document.getElementById(x),
-    maxH="480px";
+function toggleScent(x) {
+  var panel = document.getElementById(x),
+    maxH = '580px';
 
-    if(panel.style.height==maxH)
-    {
-        panel.style.height="0px";
-    }
-    else
-    {
-        panel.style.height=maxH;               
-    }
+  if (panel.style.height == maxH) {
+    panel.style.height = '0px';
+  } else {
+    panel.style.height = maxH;
+  }
 }
-function toggleIdea(x)
-{
-    var panel=document.getElementById(x),
-    maxH="480px";
+function toggleIdea(x) {
+  var panel = document.getElementById(x),
+    maxH = '580px';
 
-    if(panel.style.height==maxH)
-    {
-        panel.style.height="0px";
-    }
-    else
-    {
-        panel.style.height=maxH;               
-    }
+  if (panel.style.height == maxH) {
+    panel.style.height = '0px';
+  } else {
+    panel.style.height = maxH;
+  }
 }
-function toggleLtde(x)
-{
-    var panel=document.getElementById(x),
-    maxH="480px";
- 
-    if(panel.style.height==maxH)
-    {
-        panel.style.height="0px";
-    }
-    else
-    {
-        panel.style.height=maxH;               
-    }
+function toggleLtde(x) {
+  var panel = document.getElementById(x),
+    maxH = '580px';
+
+  if (panel.style.height == maxH) {
+    panel.style.height = '0px';
+  } else {
+    panel.style.height = maxH;
+  }
 }
-function toggleMarket(x)
-{
-    var panel=document.getElementById(x),
-    maxH="480px";
-  
-    if(panel.style.height==maxH)
-    {
-        panel.style.height="0px";
-    }
-    else
-    {
-        panel.style.height=maxH;               
-    }
+function toggleMarket(x) {
+  var panel = document.getElementById(x),
+    maxH = '580px';
+
+  if (panel.style.height == maxH) {
+    panel.style.height = '0px';
+  } else {
+    panel.style.height = maxH;
+  }
 }
-function toggleOffice(x)
-{
-    var panel=document.getElementById(x),
-    maxH="480px";
-   
-    if(panel.style.height==maxH)
-    {
-        panel.style.height="0px";
-               
-    }
-    else
-    {
-        panel.style.height=maxH;               
-    }
+function toggleOffice(x) {
+  var panel = document.getElementById(x),
+    maxH = '580px';
+
+  if (panel.style.height == maxH) {
+    panel.style.height = '0px';
+  } else {
+    panel.style.height = maxH;
+  }
 }
 
-let tabHeaders=document.querySelectorAll(".market_tabs .tab-header > div");
-let tabContents=document.querySelectorAll(".market_tabs .tab-content > div");
-    
-    for(let i=0;i<tabHeaders.length;i++)
-    {
-       tabHeaders[i].addEventListener("click",function()
-       {
-         document.querySelector(".market_tabs .tab-header > .active").classList.remove("active");
-         tabHeaders[i].classList.add("active");
-      
-         document.querySelector(".market_tabs .tab-content > .active").classList.remove("active");
-         tabContents[i].classList.add("active");     
-       })
-    }
-let tabHandLists=document.querySelectorAll(".tab-hand .tab-hand-list > div");
-let tabHandImages=document.querySelectorAll(".tab-hand .tab-hand-image > div");
-    
-       for(let i=0;i<tabHandLists.length;i++)
-    {
-       tabHandLists[i].addEventListener("click",function()
-       {
-         document.querySelector(".tab-hand .tab-hand-list > .active").classList.remove("active");
-         tabHandLists[i].classList.add("active");
-      
-         document.querySelector(".tab-hand .tab-hand-image > .active").classList.remove("active");
-         tabHandImages[i].classList.add("active");     
-       })
-    }
+let tabHeaders = document.querySelectorAll('.market_tabs .tab-header > div');
+let tabContents = document.querySelectorAll('.market_tabs .tab-content > div');
 
+for (let i = 0; i < tabHeaders.length; i++) {
+  tabHeaders[i].addEventListener('click', function () {
+    document
+      .querySelector('.market_tabs .tab-header > .active')
+      .classList.remove('active');
+    tabHeaders[i].classList.add('active');
+
+    document
+      .querySelector('.market_tabs .tab-content > .active')
+      .classList.remove('active');
+    tabContents[i].classList.add('active');
+  });
+}
+let tabHandLists = document.querySelectorAll('.tab-hand .tab-hand-list > div');
+let tabHandImages = document.querySelectorAll(
+  '.tab-hand .tab-hand-image > div'
+);
+
+for (let i = 0; i < tabHandLists.length; i++) {
+  tabHandLists[i].addEventListener('click', function () {
+    document
+      .querySelector('.tab-hand .tab-hand-list > .active')
+      .classList.remove('active');
+    tabHandLists[i].classList.add('active');
+
+    document
+      .querySelector('.tab-hand .tab-hand-image > .active')
+      .classList.remove('active');
+    tabHandImages[i].classList.add('active');
+  });
+}
 
 // user icon popup
 let userIcon = document.querySelector('.user-icon');
 let userPopupIcon = document.querySelector('.user-icon-popup');
 
-userIcon.addEventListener('click', () => userPopupIcon.classList.toggle('active'))
+userIcon.addEventListener('click', () =>
+  userPopupIcon.classList.toggle('active')
+);
 
 let text = userPopupIcon.querySelector('p');
 let actionBtn = userPopupIcon.querySelector('a');
 let user = JSON.parse(sessionStorage.user || null);
 
-if(user != null){ // user is logged in
-    text.innerHTML = `Hello, ${user.name}`;
-    actionBtn.innerHTML = 'log out';
-    actionBtn.addEventListener('click', () => logout());
-} else{
-    text.innerHTML = 'login to your account';
-    actionBtn.innerHTML = 'login';
-    actionBtn.addEventListener('click', () => location.href = '/login');
+if (user != null) {
+  // user is logged in
+  text.innerHTML = `Hello, ${user.name}`;
+  actionBtn.innerHTML = 'log out';
+  actionBtn.addEventListener('click', () => logout());
+} else {
+  text.innerHTML = 'login to your account';
+  actionBtn.innerHTML = 'login';
+  actionBtn.addEventListener('click', () => (location.href = '/login'));
 }
 
 const logout = () => {
-    sessionStorage.clear()
-    location.reload();
-}
+  sessionStorage.clear();
+  location.reload();
+};
 
 // search box
 
@@ -680,28 +662,26 @@ let searchBtn = document.querySelector('.search-btn');
 let searchBox = document.querySelector('.search');
 
 searchBtn.addEventListener('click', () => {
-    if(searchBox.value.length){
-        location.href = `/search/${searchBox.value}`;
-
-    }
-})
-
+  if (searchBox.value.length) {
+    location.href = `/search/${searchBox.value}`;
+  }
+});
 
 // nav cart count
 const updateNavCartCounter = () => {
-    let cartCounter = document.querySelector('.cart-item-count');
+  let cartCounter = document.querySelector('.cart-item-count');
 
-    let cartItem = JSON.parse(localStorage.getItem('cart'));
+  let cartItem = JSON.parse(localStorage.getItem('cart'));
 
-    if(cartItem == null){
-        cartCounter.innerHTML = '00';
-    } else{
-        if(cartItem.length > 9){
-            cartCounter.innerHTML = '9+';
-        } else if(cartItem.length <= 9){
-            cartCounter.innerHTML = `0${cartItem.length}`
-        }
+  if (cartItem == null) {
+    cartCounter.innerHTML = '00';
+  } else {
+    if (cartItem.length > 9) {
+      cartCounter.innerHTML = '9+';
+    } else if (cartItem.length <= 9) {
+      cartCounter.innerHTML = `0${cartItem.length}`;
     }
-}
+  }
+};
 
 updateNavCartCounter();

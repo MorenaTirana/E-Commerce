@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: purple;
+      }
+      .user-interactions,
+      .logo {
+        display: none;
+      }
+      .navbar.bg div#human-bar > #human_btn_holder > button,
+      .navbar.dark div#human-bar > #human_btn_holder > button,
+      .navbar.bg div#scent-bar > #scent_btn_holder > button,
+      .navbar.dark div#scent-bar > #scent_btn_holder > button,
+      .navbar.bg div#idea-bar > #idea_btn_holder > button,
+      .navbar.dark div#idea-bar > #idea_btn_holder > button,
+      .navbar.bg div#ltde-bar > #ltde_btn_holder > button,
+      .navbar.dark div#ltde-bar > #ltde_btn_holder > button,
+      .navbar.bg div#market-bar > #market_btn_holder > button,
+      .navbar.dark div#market-bar > #market_btn_holder > button,
+      .navbar.bg div#office-bar > #office_btn_holder > button,
+      .navbar.dark div#office-bar > #office_btn_holder > button {
+        color: #000;
+      }
+      .navbar.bg div#human-bar > #human_btn_holder > button::after,
+      .navbar.dark div#human-bar > #human_btn_holder > button::after,
+      .navbar.bg div#scent-bar > #scent_btn_holder > button::after,
+      .navbar.dark div#scent-bar > #scent_btn_holder > button::after,
+      .navbar.bg div#idea-bar > #idea_btn_holder > button::after,
+      .navbar.dark div#idea-bar > #idea_btn_holder > button::after,
+      .navbar.bg div#ltde-bar > #ltde_btn_holder > button::after,
+      .navbar.dark div#ltde-bar > #ltde_btn_holder > button::after,
+      .navbar.bg div#market-bar > #market_btn_holder > button::after,
+      .navbar.dark div#market-bar > #market_btn_holder > button::after,
+      .navbar.bg div#office-bar > #office_btn_holder > button::after,
+      .navbar.dark div#office-bar > #office_btn_holder > button::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: black;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+      }
+      .navbar.bg div#human-bar > #human_btn_holder > button:focus::after,
+      .navbar.dark div#human-bar > #human_btn_holder > button:focus::after,
+      .navbar.bg div#scent-bar > #scent_btn_holder > button:focus:after,
+      .navbar.dark div#scent-bar > #scent_btn_holder > button:focus:after,
+      .navbar.bg div#idea-bar > #idea_btn_holder > button:focus:after,
+      .navbar.dark div#idea-bar > #idea_btn_holder > button:focus:after,
+      .navbar.bg div#ltde-bar > #ltde_btn_holder > button:focus:after,
+      .navbar.dark div#ltde-bar > #ltde_btn_holder > button:focus:after,
+      .navbar.bg div#market-bar > #market_btn_holder > button:focus:after,
+      .navbar.dark div#market-bar > #market_btn_holder > button:focus:after {
+        width: 70px;
+      }
+      div#human-bar > #human_btn_holder,
+      div#scent-bar > #scent_btn_holder,
+      div#idea-bar > #idea_btn_holder,
+      div#ltde-bar > #ltde_btn_holder,
+      div#market-bar > #market_btn_holder,
+      div#office-bar > #office_btn_holder {
+        float: left;
+        width: 144px;
+        height: 46px;
+      }
+
+      .navbar.bg div#office-bar > #office_btn_holder > button:focus:after,
+      .navbar.dark div#office-bar > #office_btn_holder > button:focus:after {
+        width: 60px;
+      }
+      .navbar.bg div#scent-bar > #scent_btn_holder > button:focus:after,
+      .navbar.dark div#scent-bar > #scent_btn_holder > button:focus:after {
+        width: 50px;
+      }
+      .navbar.bg div#idea-bar > #idea_btn_holder > button:focus:after,
+      .navbar.dark div#idea-bar > #idea_btn_holder > button:focus:after,
+      .navbar.bg div#ltde-bar > #ltde_btn_holder > button:focus:after,
+      .navbar.dark div#ltde-bar > #ltde_btn_holder > button:focus:after {
+        width: 50px;
+      }
+      .link.active,
+      .link:hover,
+      .navbar.bg .link:hover,
+      .navbar.bg .link.active {
+        opacity: 1;
+      }
+      .home-active {
+        margin-top: 50px;
+        margin-left: 250px;
+      }
+      .home-active a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 25px;
+      }
+
+      .home-active:focus:after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: white;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+      }
+      .navbar.dark .home-active {
+        margin-top: -60px;
+        margin-left: 280px;
+      }
+      .navbar.bg .home-active a,
+      .navbar.dark .home-active a {
+        color: #000;
+        text-transform: capitalize;
+      }
+      /* common properties for all menu buttons */
+      div#human-bar > #human_btn_holder,
+      div#scent-bar > #scent_btn_holder,
+      div#idea-bar > #idea_btn_holder,
+      div#ltde-bar > #ltde_btn_holder,
+      div#market-bar > #market_btn_holder,
+      div#office-bar > #office_btn_holder {
+        float: left;
+        width: 144px;
+        height: 46px;
+      }
+      div#human-bar > #human_btn_holder > button::after,
+      div#scent-bar > #scent_btn_holder > button::after,
+      div#idea-bar > #idea_btn_holder > button::after,
+      div#ltde-bar > #ltde_btn_holder > button::after,
+      div#market-bar > #market_btn_holder > button::after,
+      div#office-bar > #office_btn_holder > button::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: white;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+      }
+      div#human-bar > #human_btn_holder > button:focus::after,
+      div#market-bar > #market_btn_holder > button:focus:after {
+        width: 70px;
+      }
+      div#office-bar > #office_btn_holder > button:focus:after {
+        width: 70px;
+      }
+      div#scent-bar > #scent_btn_holder > button:focus:after,
+      div#idea-bar > #idea_btn_holder > button:focus:after,
+      div#ltde-bar > #ltde_btn_holder > button:focus:after {
+        width: 60px;
+      }
+      div#human-bar > #human_btn_holder > button,
+      div#scent-bar > #scent_btn_holder > button,
+      div#idea-bar > #idea_btn_holder > button,
+      div#ltde-bar > #ltde_btn_holder > button,
+      div#market-bar > #market_btn_holder > button,
+      div#office-bar > #office_btn_holder > button {
+        background: transparent;
+        margin-left: 80px;
+        color: #fff;
+        position: absolute;
+        top: 50px;
+        font-size: 25px;
+        width: 60px;
+        height: 30px;
+        border: none;
+      }
+
+      /*this following code shows the head menu correctly */
+
+      div#human-bar > #human_panel,
+      div#scent-bar > #scent_panel,
+      div#idea-bar > #idea_panel,
+      div#ltde-bar > #ltde_panel,
+      div#market-bar > #market_panel,
+      div#office-bar > #office_panel {
+        position: absolute;
+        height: 0px;
+        width: 1280px;
+        top: 110px;
+        left: 0px;
+        border-radius: 0px 0px 1px 1px;
+        overflow: hidden;
+        z-index: 10000;
+        transition: height 0.3s linear 0s;
+      }
+
+      div#human-bar > #human_panel > div,
+      div#scent-bar > #scent_panel > div,
+      div#idea-bar > #idea_panel > div,
+      div#ltde-bar > #ltde_panel > div,
+      div#market-bar > #market_panel > div,
+      div#office-bar > #office_panel > div {
+        /* doesn't affect menu' s height */
+        position: absolute;
+        width: 1275px;
+        margin-left: 2px;
+        margin-bottom: 2px;
+        color: black;
+      }
+
+      /* human menu button */
+      div#human-bar > #human_btn_holder > button {
+        left: 235px;
+      }
+      /* scent menu button */
+      div#scent-bar > #scent_btn_holder > button {
+        left: 350px;
+      }
+
+      /* idea menu button */
+      div#idea-bar > #idea_btn_holder > button {
+        left: 450px;
+      }
+
+      /* ltde menu button */
+      div#ltde-bar > #ltde_btn_holder > button {
+        left: 540px;
+      }
+
+      /* market menu button */
+
+      div#market-bar > #market_btn_holder > button {
+        left: 630px;
+      }
+
+      /* office menu button */
+
+      div#office-bar > #office_btn_holder > button {
+        left: 750px;
+      }
+
+      .market_tabs {
+        padding-top: 50px;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -5%);
+        width: 1280px;
+        height: 800px !important;
+        display: flex;
+        overflow: hidden;
+        background-color: #fff;
+      }
+      .market_tabs .tab-header {
+        padding-top: 40px;
+        padding-bottom: 30px;
+      }
+      .market_tabs .tab-header > div {
+        width: 150%;
+        height: 50px;
+        padding-left: 100px;
+        text-indent: 20px;
+        color: black;
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+        margin-top: 40px;
+      }
+      .tab-header > div.active {
+        font-weight: bold;
+        color: #d5be8b;
+      }
+      .tab-header > div::after {
+        content: ' ';
+        background: #d5be8b;
+        width: 0%;
+        height: 2px;
+        margin-top: 30px;
+        margin-left: 10px;
+        position: fixed;
+        display: block;
+        transition: 0.2s;
+      }
+      .tab-header > div.active::after {
+        width: 90px;
+      }
+      .tab-header > .face::after {
+        width: 0%;
+        transition: 0.2s linear;
+      }
+
+      .tab-header > .face.active::after {
+        width: 57px;
+      }
+
+      .tab-header > .feet::after {
+        width: 0%;
+        transition: 0.2s linear;
+      }
+
+      .tab-header > .feet.active::after {
+        width: 55px;
+      }
+
+      .market_tabs .tab-content {
+        flex: 1;
+        position: relative;
+        padding-left: 200px;
+      }
+      .market_tabs .tab-content > div {
+        position: absolute;
+        height: 300px;
+        top: -50vh;
+        opacity: 0;
+        margin-left: 100px;
+      }
+      .market_tabs .tab-content > div.active {
+        top: 40px;
+        left: 0;
+        opacity: 1;
+      }
+      .col-1 img {
+        width: 670px;
+        height: 600px;
+        left: 350px;
+        position: absolute;
+        top: -20%;
+      }
+
+      .col-1 ul {
+        width: 350px;
+        height: 400px;
+        position: relative;
+      }
+      .col-1 ul li {
+        list-style: none;
+        height: 80px;
+        padding-top: 40px;
+      }
+      .col-1 ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+      }
+      .col-1 ul li a:hover {
+        color: #d5be8b;
+        transition: 0.2s;
+      }
+      .col-1 ul li a.hand-lotion::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: #d5be8b;
+        display: block;
+        margin-right: 100px;
+        transition: 0.2s;
+      }
+
+      .col-1 ul li a.hand-lotion:hover::after {
+        width: 70px;
+      }
+      .col-1 ul li a.hand-soap::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: #d5be8b;
+        display: block;
+        margin-right: 100px;
+        transition: 0, 2s;
+      }
+
+      .col-1 ul li a.hand-soap:hover::after {
+        width: 50px;
+      }
+      /* BODY */
+      .col-1 ul li .body-oil a {
+        font-size: 18px;
+        margin-top: -50px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+      }
+      .col-1 ul li a.body-cleanser::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: #d5be8b;
+        display: block;
+        margin-right: 100px;
+        transition: 0.2s;
+      }
+
+      .col-1 ul li a.body-cleanser:hover::after {
+        width: 90px;
+      }
+      .col-1 ul li a.body-oil::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: #d5be8b;
+        display: block;
+        margin-right: 100px;
+        transition: 0.2s;
+      }
+
+      .col-1 ul li a.body-oil:hover::after {
+        width: 30px;
+      }
+      .col-1 ul li a.body-scrub::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: #d5be8b;
+        display: block;
+        margin-right: 100px;
+        transition: 0.2s;
+      }
+
+      .col-1 ul li a.body-scrub:hover::after {
+        width: 60px;
+      }
+      .col-1 ul li a.body-protective::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: #d5be8b;
+        display: block;
+        margin-right: 100px;
+        transition: 0.2s;
+      }
+
+      .col-1 ul li a.body-protective:hover::after {
+        width: 30px;
+      }
+      .col-1 ul li a.face-cleanser-oil::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: #d5be8b;
+        display: block;
+        margin-right: 100px;
+        transition: 0.2s;
+      }
+
+      .col-1 ul li a.face-cleanser:hover::after {
+        width: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar"></nav>
+    <script src="js/nav.js"></script>
+  </body>
+</html>
