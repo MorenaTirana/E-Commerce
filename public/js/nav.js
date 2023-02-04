@@ -130,26 +130,26 @@ const createNavbar = () => {
                             <div class="sub_menu_1">
                                 <div class="col-1">
                                     <ul>
-                                        <li><a href="faceCleanser.html">Cleanser</a>
+                                        <li><a href="faceCleanser.html" class="face-cleanser">Cleanser</a>
                                             <div class="sub_menu_2">
                                                 <div class="col-2">
                                                     <img src="img/Face Cleanser.png">                                                                                                               </div>
                                                 </div>                                                                    
                                         </li>
-                                        <li><a href="faceLotion.html">Lotion</a>
+                                        <li><a href="faceLotion.html" class="face-lotion">Lotion</a>
                                             <div class="sub_menu_2">
                                                 <div class="col-2">
                                                     <img src="img/Face Lotion.png">
                                                 </div>
                                             </div>
                                         </li>
-                                        <li><a href="faceSerum.html">Serum</a>
+                                        <li><a href="faceSerum.html" class="face-serum">Serum</a>
                                             <div class="sub_menu_2">
                                                 <div class="col-2">
                                                     <img src="img/Face Serum.jpg">                                                                                                               </div>
                                                 </div>                                                               
                                         </li>
-                                        <li><a href="faceMist.html">Mist</a>
+                                        <li><a href="faceMist.html" class="face-mist">Mist</a>
                                             <div class="sub_menu_2">
                                                 <div class="col-2">
                                                     <img src="img/Face Mist.png">
@@ -169,14 +169,14 @@ const createNavbar = () => {
                             <div class="sub_menu_1">
                                 <div class="col-1">
                                     <ul>
-                                        <li><a href="footLotion.html">Lotion</a>
+                                        <li><a href="footLotion.html" class="feet-lotion">Lotion</a>
                                             <div class="sub_menu_2">
                                                 <div class="col-2">
                                                     <img src="img/Foot Lotion.png">
                                                 </div>
                                             </div>
                                         </li>
-                                        <li><a href="footOil.html">Oil</a>
+                                        <li><a href="footOil.html" class="feet-oil">Oil</a>
                                             <div class="sub_menu_2">
                                                 <div class="col-2">
                                                     <img src="img/Foot Oil.png">
@@ -204,8 +204,8 @@ const createNavbar = () => {
         <div class="tab">
             <div class="market_tabs">
                 <div class="tab-header">
-                    <div class="active">Neck/Wrist</div>
-                    <div>Armpit</div>
+                    <div class="active neck">Neck/Wrist</div>
+                    <div class="armpit">Armpit</div>
                 </div>
                 <div class="tab-content">
                 <div class="active">
@@ -213,7 +213,7 @@ const createNavbar = () => {
                         <div class="sub_menu_1">
                             <div class="col-1">
                                 <ul>
-                                    <li><a href="Hand Lotion.html">Perfume</a>
+                                    <li><a href="Hand Lotion.html" class="neck-perfume">Perfume</a>
                                         <div class="sub_menu_2">
                                             <div class="col-2">
                                                 <img src="img/Hand Lotion.png">                                                                                                               </div>
@@ -235,14 +235,14 @@ const createNavbar = () => {
                         <div class="sub_menu_1">
                             <div class="col-1">
                                 <ul>
-                                    <li><a href="#">Deo 1</a>
+                                    <li><a href="#" class="armpit-deo1">Deo 1</a>
                                         <div class="sub_menu_2">
                                             <div class="col-2">
                                                 <img src="img/Body Cleanser.png">                                                                                                               </div>
                                             </div> 
                                                                                                              
                                     </li>
-                                    <li><a href="#">Deo 2</a>
+                                    <li><a href="#" class="armpit-deo2">Deo 2</a>
                                         <div class="sub_menu_2">
                                             <div class="col-2">
                                                 <img src="img/Body Scrub.png">
