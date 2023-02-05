@@ -78,7 +78,7 @@ const createNavbar = () => {
                                 </div>    
                             </div>
                         </div>
-                        <div class="col-1">
+                        <div class="col-1 hands">
                             <img src="img/Hands.png">
                         </div>     
                     </div>
@@ -269,9 +269,9 @@ const createNavbar = () => {
         <div class="tab">
             <div class="market_tabs">
                 <div class="tab-header">
-                    <div class="active">Crafted for Conscious</div>
-                    <div>Climate</div>
-                    <div>Team</div>
+                    <div class="active crafted">Crafted for Conscious</div>
+                    <div class="climate">Climate</div>
+                    <div class="team">Team</div>
                 </div>
                 <div class="tab-content">
                     <div class="active">
@@ -279,7 +279,7 @@ const createNavbar = () => {
                             <div class="sub_menu_1">
                                 <div class="col-1">
                                     <ul>
-                                        <li><a href="Hand Lotion.html">Fixar Test 1</a>
+                                        <li><a href="Hand Lotion.html" class="idea-crafted-test1">Fixar Test 1</a>
                                             <div class="sub_menu_2">
                                                 <div class="col-2">
                                                     <img src="img/Hand Lotion.png">                                                                                                               </div>
@@ -300,7 +300,7 @@ const createNavbar = () => {
                             <div class="sub_menu_1">
                                 <div class="col-1">
                                     <ul>
-                                        <li><a href="#">Fixar Test 2</a>
+                                        <li><a href="#" class="idea-climate-test2">Fixar Test 2</a>
                                             <div class="sub_menu_2">
                                                 <div class="col-2">
                                                     <img src="img/Body Cleanser.png">                                                                                                               </div>
@@ -321,7 +321,7 @@ const createNavbar = () => {
                             <div class="sub_menu_1">
                                 <div class="col-1">
                                     <ul>
-                                        <li><a href="#">Our Team</a>
+                                        <li><a href="#" class="idea-team">Our Team</a>
                                             <div class="sub_menu_2">
                                                 <div class="col-2">
                                                     <img src="img/Face Cleanser.png">                                                                                                               </div>
@@ -357,17 +357,17 @@ const createNavbar = () => {
                         <div class="sub_menu_1">
                             <div class="col-1">
                                 <ul>
-                                    <li><a href="Hand Lotion.html">01</a>
+                                    <li><a href="Hand Lotion.html" class="ltde-01">01</a>
                                         <div class="sub_menu_2">
                                             <div class="col-2">
-                                                <img src="img/Hand Lotion.png">                                                                                                               </div>
+                                                <img src="img/Hand Lotion.png" alt="hand lotion">                                                                                                               </div>
                                             </div> 
                                                                                                                                                                      
                                     </li>
-                                    <li><a href="#">02</a>
+                                    <li><a href="#" class="ltde-02">02</a>
                                         <div class="sub_menu_2">
                                             <div class="col-2">
-                                                <img src="img/Body Oil.jpg">
+                                                <img src="img/Body Oil.jpg" alt="body oil">
                                             </div>
                                         </div>
                                     </li>
@@ -376,7 +376,7 @@ const createNavbar = () => {
                             </div>    
                         </div>
                     </div>
-                    <div class="col-1">
+                    <div class="col-1 ltde-image">
                         <img src="img/Hands.png">
                     </div>     
                 </div>
@@ -394,9 +394,9 @@ const createNavbar = () => {
         <div class="tabs">
             <div class="market_tabs">
                 <div class="tab-header">
-                    <div class="active">Brands</div>
-                    <div>Final Call </div>
-                    <div>Outlet</div>
+                    <div id="market-brands" class="active">Brands</div>
+                    <div class="market-final">Final Call </div>
+                    <div class="market-outlet">Outlet</div>
                 </div>
                 <div class="tab-content">
                     <div class="active">
@@ -404,7 +404,7 @@ const createNavbar = () => {
                             <div class="sub_menu_1">
                                 <div class="col-1">
                                     <ul>
-                                        <li><a href="Soap.html">Brand</a>
+                                        <li><a href="Soap.html" class="market-brand">Brand</a>
                                             <div class="sub_menu_2">
                                                 <div class="col-2">
                                                     <img src="img/Hand Soap.png">
@@ -425,7 +425,7 @@ const createNavbar = () => {
                             <div class="sub_menu_1">
                                 <div class="col-1">
                                     <ul>
-                                        <li><a href="#">Picks 1</a>
+                                        <li><a href="#" class="market-picks1">Picks 1</a>
                                             <div class="sub_menu_2">
                                                 <div class="col-2">
                                                     <img src="img/Body Protective.png">
@@ -446,7 +446,7 @@ const createNavbar = () => {
                             <div class="sub_menu_1">
                                 <div class="col-1">
                                     <ul>
-                                        <li><a href="#">Picks 2</a>
+                                        <li><a href="#" class="market-picks2">Picks 2</a>
                                             <div class="sub_menu_2">
                                                 <div class="col-2">
                                                     <img src="img/Face Lotion.png">
@@ -476,8 +476,8 @@ const createNavbar = () => {
         <div class="tab">
             <div class="market_tabs">
                 <div class="tab-header">
-                    <div class="active">Contact details</div>
-                    <div>Press</div>
+                    <div class="active contact">Contact details</div>
+                    <div class="press">Press</div>
                 </div>
                 <div class="tab-content">
                     <div class="active">
@@ -485,17 +485,17 @@ const createNavbar = () => {
                             <div class="sub_menu_1">
                                 <div class="col-1">
                                    <ul>
-                                       <li><a href="contact.html">Contact us</a>
+                                       <li><a href="contact.html" class="office-contact">Contact us</a>
                                             <div class="sub_menu_2">
                                                 <div class="col-2">
-                                                    <img src="img/Hand Lotion.png">                                                                                                               </div>
+                                                    <img src="img/Deo1.png">                                                                                                               </div>
                                                 </div>                                                                                                                            
                                         </li>
                                    </ul> 
                                 </div>    
                             </div>
                         </div>
-                        <div class="col-1">
+                        <div class="col-1 office-contactImage">
                             <img src="img/Hands.png">
                         </div>     
                      </div>
@@ -506,10 +506,10 @@ const createNavbar = () => {
                                 <div class="col-1">
                                     <ul>
                                    
-                                        <li><a href="#">Press</a>
+                                        <li><a href="#" class="office-press">Press</a>
                                             <div class="sub_menu_2">
                                                 <div class="col-2">
-                                                    <img src="img/Body Oil.jpg">
+                                                    <img src="img/product-1.jpg">
                                                 </div>
                                             </div>
                                         </li>
@@ -517,8 +517,8 @@ const createNavbar = () => {
                                 </div>                                
                             </div> 
                         </div> 
-                        <div class="col-1">
-                            <img src="img/Body.png">
+                        <div class="col-1 office-pressImage">
+                            <img src="img/Deo2.png">
                         </div>
                     </div>
                 </div>

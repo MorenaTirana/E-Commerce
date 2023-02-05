@@ -308,13 +308,14 @@ div#office-bar > #office_btn_holder > button {
   opacity: 1;
 }
 
-
 .col-1 img {
   width: 670px;
   height: 600px;
   left: 350px;
   position: absolute;
   top: -20%;
+  opacity: 1;
+  z-index: 1;
 }
 
 .col-1 ul {
@@ -341,6 +342,8 @@ div#office-bar > #office_btn_holder > button {
   color: #d5be8b;
   transition: 0.2s;
 }
+
+/* HUMAN - Hand */
 .col-1 ul li a.hand-lotion::after {
   content: '';
   width: 0%;
@@ -369,7 +372,12 @@ div#office-bar > #office_btn_holder > button {
   width: 45px;
   margin-left: -5px;
 }
-/* BODY :after underline effect */
+
+.col-1 ul li .hand-lotion:hover .col-1 img{
+    display: none;
+} 
+
+/* HUMAN - Body */
 .col-1 ul li .body-oil a {
   font-size: 18px;
   margin-top: -50px;
@@ -433,7 +441,7 @@ div#office-bar > #office_btn_holder > button {
   margin-left: -5px;
 }
 
-/* Face */
+/* HUMAN - Face */
 .col-1 ul li a.face-cleanser::after {
   content: '';
   width: 0%;
@@ -521,17 +529,27 @@ div#office-bar > #office_btn_holder > button {
     margin-left: -5px;
   }
 
-  /* SCENT - NECK / WRIST :after underline effect */
+  /* SCENT  */
 
 #scent_panel .col-1 ul {
   width: 350px;
   height: 400px;
   position: relative;
-  padding-left: 100px;
-  margin-left: 30px;
-  background-color: yellow;
+  padding-left: 90px;
+  margin-left: -10px;
   border-left:1px solid #d5be8b;
 }
+
+#scent_panel .col-1 img {
+    width: 770px;
+    height: 600px;
+    left: 300px;
+    position: absolute;
+    top: -20%;
+  }
+
+  /* SCENT - Neck /Wrist */
+
   .tab-header > .neck::after {
     width: 0%;
     transition: 0.2s linear;
@@ -539,15 +557,6 @@ div#office-bar > #office_btn_holder > button {
   
   .tab-header > .neck.active::after {
     width: 110px;
-  }
-
-  .tab-header > .armpit::after {
-    width: 0%;
-    transition: 0.2s linear;
-  }
-  
-  .tab-header > .armpit.active::after {
-    width: 78px;
   }
 
   .col-1 ul li a.neck-perfume::after {
@@ -563,6 +572,18 @@ div#office-bar > #office_btn_holder > button {
   .col-1 ul li a.neck-perfume:hover::after {
     width: 75px;
     margin-left: -5px;
+  }
+
+  /* SCENT - Armpit */
+
+ 
+  .tab-header > .armpit::after {
+    width: 0%;
+    transition: 0.2s linear;
+  }
+  
+  .tab-header > .armpit.active::after {
+    width: 78px;
   }
 
   .col-1 ul li a.armpit-deo1::after {
@@ -594,3 +615,382 @@ div#office-bar > #office_btn_holder > button {
     width: 50px;
     margin-left: -5px;
   }
+
+  /* IDEA Menu Panel*/
+
+ #idea_panel .market_tabs .tab-header > div {
+    width: 100%;
+    padding-left: 50px;
+  }
+
+  #idea_panel .col-1 ul {
+  
+    padding-left: 110px;
+    margin-left: -70px;
+    border-left:1px solid #d5be8b;
+  }
+  
+  #idea_panel .col-1 img {
+      width: 770px;
+      height: 600px;
+      left: 250px;
+      position: absolute;
+      top: -20%;
+    }
+
+    /* IDEA - Crafted for Conscious */
+    #idea_panel .tab-header .active::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: #d5be8b;
+        display: block;
+        margin-right: 100px;
+        transition: 0.2s;
+    }
+
+    #idea_panel .tab-header .active::after{
+        width: 213px;
+        
+    }
+
+    .col-1 ul li a.idea-crafted-test1::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: #d5be8b;
+        display: block;
+        margin-right: 100px;
+        transition: 0.2s;
+      }
+      
+      .col-1 ul li a.idea-crafted-test1:hover::after {
+        width: 97px;
+        margin-left: -5px;
+      }
+    /* IDEA - Climate */
+
+    #idea_panel .tab-header .climate::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: #d5be8b;
+        display: block;
+        margin-right: 100px;
+        transition: 0.2s;
+    }
+
+    #idea_panel .tab-header .climate.active::after{
+        width: 80px;   
+    }
+
+    .col-1 ul li a.idea-climate-test2::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: #d5be8b;
+        display: block;
+        margin-right: 100px;
+        transition: 0.2s;
+      }
+      
+      .col-1 ul li a.idea-climate-test2:hover::after {
+        width: 97px;
+        margin-left: -5px;
+      }
+     /* IDEA - Team */
+
+    #idea_panel .tab-header .team::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: #d5be8b;
+        display: block;
+        margin-right: 100px;
+        transition: 0.2s;
+    }
+
+    #idea_panel .tab-header .team.active::after{
+        width: 63px;   
+    }
+
+    .col-1 ul li a.idea-team::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: #d5be8b;
+        display: block;
+        margin-right: 100px;
+        transition: 0.2s;
+      }
+      
+      .col-1 ul li a.idea-team:hover::after {
+        width: 85px;
+        margin-left: -5px;
+      }
+
+/* LTDE */
+
+#ltde_panel .tab-header > .active::after {
+    width: 0%;
+    transition: 0.2s linear;
+  }
+  
+  #ltde_panel .tab-header > .active:hover::after {
+    width: 150px;
+  }
+  
+#ltde_panel .market_tabs .tab-header > div{
+    padding-left: 70px;
+}
+
+#ltde_panel .ltde-image img {
+    width: 790px;
+    height: 600px;
+    left: 290px;
+    position: absolute;
+    top: -20%;
+  }
+
+  #ltde_panel .col-1 ul {
+    border-left: 1px solid #d5be8b;
+    margin-left:-10px;
+    width:400px;
+    border-right: #fff;
+  }
+  #ltde_panel .col-1 ul li{
+    padding-left: 20px;
+  }
+
+  .col-1 ul li a.ltde-01::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #d5be8b;
+    display: block;
+    margin-right: 100px;
+    transition: 0.2s;
+  }
+  
+  .col-1 ul li a.ltde-01:hover::after {
+    width: 28px;
+    margin-left: -5px;
+  }
+  .col-1 ul li a.ltde-02::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #d5be8b;
+    display: block;
+    margin-right: 100px;
+    transition: 0.2s;
+  }
+  
+  .col-1 ul li a.ltde-02:hover::after {
+    width: 28px;
+    margin-left: -5px;
+  }
+
+  /* MARKET - Brands */
+
+  #market_panel .tab-header{
+    padding-right: 15px;
+  }
+  #market_panel .col-1 ul{
+    margin-left: -10px;
+  }
+  #market_panel .col-1 ul li{
+    padding-left: 10px;
+  }
+
+  #market_panel .col-1 img {
+    width: 790px;
+    height: 600px;
+    left: 310px;
+    position: absolute;
+    top: -20%;
+  }
+  #market_panel .tab-header > #market-brands.active::after {
+    width:80px;
+  }
+  #market_panel .tab-header > #market-brands:hover{
+    color: #d5be8b;
+  }
+  #market_panel .tab-header > #market-brands:hover::after {
+    width:80px;
+  }
+
+  #market_panel .tab-header > .active::after {
+    width: 0%;
+    transition: 0.2s linear;
+  }
+  
+  #market_panel .tab-header > .active:hover::after {
+    width: 80px;
+  }
+  
+  #market_panel .tab-header > .market-final:hover {
+    color: #d5be8b;
+  }
+  #market_panel .tab-header > .market-final.active::after {
+    width:106px;
+  }
+  #market_panel .tab-header > .market-final::after {
+    width: 0%;
+    transition: 0.2s linear;
+  }
+  
+  #market_panel .tab-header > .market-final:hover::after {
+    width: 106px;
+  }
+
+  #market_panel .tab-header > .market-outlet.active::after {
+    width: 80px;
+  }
+  #market_panel .tab-header > .market-outlet:hover {
+    color: #d5be8b;
+  }
+  #market_panel .tab-header > .market-outlet:hover::after {
+    width:80px;
+  }
+
+  .col-1 ul li a.market-brand::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #d5be8b;
+    display: block;
+    margin-right: 100px;
+    transition: 0.2s;
+  }
+  
+  .col-1 ul li a.market-brand:hover::after {
+    width: 60px;
+    margin-left: -5px;
+  }
+
+  .col-1 ul li a.market-picks1::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #d5be8b;
+    display: block;
+    margin-right: 100px;
+    transition: 0.2s;
+  }
+  
+  .col-1 ul li a.market-picks1:hover::after {
+    width: 60px;
+    margin-left: -5px;
+  }
+  .col-1 ul li a.market-picks2::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #d5be8b;
+    display: block;
+    margin-right: 100px;
+    transition: 0.2s;
+  }
+  
+  .col-1 ul li a.market-picks2:hover::after {
+    width: 60px;
+    margin-left: -5px;
+  }
+
+  /* OFFICE Menu Panel*/
+
+  #office_panel .market_tabs .tab-header {
+    padding-right: 40px;
+  }
+
+  #office_panel .office-contactImage img {
+    width: 790px;
+    height: 600px;
+    left: 230px;
+    position: absolute;
+    top: -20%;
+  }
+
+  #office_panel .tab-header .contact:hover{
+    color: #d5be8b;
+  }
+  #office_panel .tab-header > .contact::after {
+    width: 0%;
+    transition: 0.2s linear;
+  }
+  
+  #office_panel .tab-header > .contact:hover::after {
+    width: 155px;
+  }
+  #office_panel .tab-header > .contact.active::after {
+    width: 155px;
+  }
+
+  .col-1 ul li a.office-contact::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #d5be8b;
+    display: block;
+    margin-right: 100px;
+    transition: 0.2s;
+  }
+  
+  .col-1 ul li a.office-contact:hover::after {
+    width: 95px;
+    margin-left: -5px;
+  }
+  #office_panel .tab-header .press:hover{
+    color: #d5be8b;
+  }
+  #office_panel .tab-header > .press::after {
+    width: 0%;
+    transition: 0.2s linear;
+  }
+  
+  #office_panel .tab-header > .press:hover::after {
+    width: 65px;
+  }
+  #office_panel .tab-header > .press.active::after {
+    width: 65px;
+  }
+  
+  #office_panel .tab-header > div{
+    padding-left: 70px;
+    padding-right: 30px;
+  }
+
+  #office_panel .tab-content .col-1 ul{
+    margin-left: -85px;
+  }
+
+  #office_panel .tab-content .col-1 ul li{
+    margin-left: -20px !important;
+  }
+
+  #office_panel .office-pressImage img {
+    width: 790px;
+    height: 600px;
+    left: 230px;
+    position: absolute;
+    top: -20%;
+  }
+
+  .col-1 ul li a.office-press::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #d5be8b;
+    display: block;
+    margin-right: 100px;
+    transition: 0.2s;
+  }
+  
+  .col-1 ul li a.office-press:hover::after {
+    width: 50px;
+    margin-left: -5px;
+  }
+
+
+ 
