@@ -315,6 +315,7 @@ div#office-bar > #office_btn_holder > button {
   left: 350px;
   position: absolute;
   top: -20%;
+  z-index: 1;
 }
 
 .col-1 ul {
@@ -343,31 +344,11 @@ div#office-bar > #office_btn_holder > button {
 }
 
 /* HUMAN - Hand */
-.col-1 ul li .sub_menu_2 {
-    position: absolute;
-    background: #fff;
-    width: 100%;
-    left: 200px;
-    top: 0;
-    display: flex;
-    justify-content: space-around;
-    line-height: 24px;
-    visibility: hidden;
-  }
-  .col-1 ul li:hover .sub_menu_2 {
-    visibility: visible;
+
+.col-1 a.hand-lotion:hover ~ #hands{
+    display: none; 
   }
 
-  .sub_menu_1 ul li .sub_menu_2 .col-2 img {
-    height: 550px;
-    width: 750px;
-    transform: translate(10%, 10%);
-    position: relative;
-    background-blend-mode: normal;
-  }
-.col-1 ul li .hand-lotion a:hover .col-1 img{
-    display: none !important;
-}
 .col-1 ul li a.hand-lotion::after {
   content: '';
   width: 0%;

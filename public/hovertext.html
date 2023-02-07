@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .hiddenimg {
+            display: none;
+          }
+          
+          .hiddentxt {
+            font-weight: bold;
+            color: #F00;
+            z-index:99;
+          }
+          
+          .hiddentxt a {
+            color: #F00;
+            text-decoration: none;
+            z-index: 99;
+          }
+          
+          .hiddenclick {
+            font-weight: bold;
+            color: #F00;
+            text-decoration: none;
+            cursor: pointer;
+          }
+          
+          .hiddenclick a {
+            color: #F00;
+            text-decoration: none;
+          }
+          
+          .hiddenclick a:visited {
+            color: #F00;
+            text-decoration: none;
+          }
+          
+          .hiddentxt:hover ~ .hiddenimg {
+            display: block;
+            position: absolute;
+              z-index: 2
+          }
+          
+          .hiddenclickimg {
+            display: none;
+          
+          }
+    </style>
+    <head>
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+      </head>
+      <body>
+        <p>
+          Hover to see a 
+          <span class="hiddentxt">
+            <a href="https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg">
+                banana
+            </a>
+         </span>
+         <span class="hiddenimg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg" width="250" /></span>.
+        </p>
+        <p>
+            
+          It <span class="hiddentxt"><a href="https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg">disjoins</a></span><span class="hiddenimg"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg" width="250" /></span> the sentence when the image and text are next to each other in HTML.
+        </p>
+        <p>To fix this, position the image at the end of the <span class="hiddentxt"><a href = "https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg">element</a></span>, and use the ~ selector in the CSS.<span class="hiddenimg"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg" width="250" /></span>
+        </p>
+        <p>
+          Let's see if it works with <span class="hiddentxt" onmouseover="vidPlay()" onmouseout="vidPause()"><a href="https://mtc.cdn.vine.co/r/videos/ECBC329ACC1050514912117440512_1c6599f182f.4.6.16444000809832514200.mp4">videos</a></span>. (The video should play when it's displayed, but sometimes it takes a while to load.)
+          <span class="hiddenimg"><video id="video1" loop>
+            <source src="https://mtc.cdn.vine.co/r/videos/ECBC329ACC1050514912117440512_1c6599f182f.4.6.16444000809832514200.mp4" type="video/mp4">
+            </video></span>
+        </P>
+        <p>
+          Bonus round! I want to make it so you can click a word to toggle an image. This is not currently possible using just CSS, so we must bring in JavaScript, and particularly jQuery.</p><p> Click <span class = "hiddenclick" onclick = "toggleImage()">here</span> to show image.<br>
+        <span class="hiddenclickimg"><img src = "https://s-media-cache-ak0.pinimg.com/originals/22/74/8c/22748c9b9cc2c039aed206cab0247404.gif"/></span>
+        </p>
+      
+        <script>
+            function vidPlay() {  
+                $("#video1").get(0).play();  
+              };
+              function vidPause() {
+                  $("#video1").get(0).pause();
+              };
+              $(document).ready(function(){
+                $("#textToggler").click(function(){
+                  $(".toggleText").toggle();
+                });
+              });
+              function toggleImage() {
+                $(".hiddenclickimg").toggle();
+              };
+        </script>
+</body>
+</html>

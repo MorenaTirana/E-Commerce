@@ -78,7 +78,7 @@ const createNavbar = () => {
                                 </div>    
                             </div>
                         </div>
-                        <div class="col-1 hands">
+                        <div class="col-1" id="hands">
                             <img src="img/Hands.png">
                         </div>     
                     </div>
@@ -598,16 +598,22 @@ let tabContents = document.querySelectorAll('.market_tabs .tab-content > div');
 
 for (let i = 0; i < tabHeaders.length; i++) {
   tabHeaders[i].addEventListener('click', function () {
-    document.querySelector('.market_tabs .tab-header > .active').classList.remove('active');
+    document
+      .querySelector('.market_tabs .tab-header > .active')
+      .classList.remove('active');
     tabHeaders[i].classList.add('active');
 
-    document.querySelector('.market_tabs .tab-content > .active').classList.remove('active');
+    document
+      .querySelector('.market_tabs .tab-content > .active')
+      .classList.remove('active');
     tabContents[i].classList.add('active');
   });
 }
 
 let tabHandLists = document.querySelectorAll('.tab-hand .tab-hand-list > div');
-let tabHandImages = document.querySelectorAll('.tab-hand .tab-hand-image > div');
+let tabHandImages = document.querySelectorAll(
+  '.tab-hand .tab-hand-image > div'
+);
 
 for (let i = 0; i < tabHandLists.length; i++) {
   tabHandLists[i].addEventListener('click', function () {
