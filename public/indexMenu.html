@@ -1,0 +1,1777 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .logo {
+        display: none;
+      }
+      .user-interactions {
+        display: none;
+      }
+      body {
+        background-color: purple;
+      }
+     
+.navbar.bg div#human-bar > #human_btn_holder > button,
+.navbar.dark div#human-bar > #human_btn_holder > button,
+.navbar.bg div#scent-bar > #scent_btn_holder > button,
+.navbar.dark div#scent-bar > #scent_btn_holder > button,
+.navbar.bg div#idea-bar > #idea_btn_holder > button,
+.navbar.dark div#idea-bar > #idea_btn_holder > button,
+.navbar.bg div#ltde-bar > #ltde_btn_holder > button,
+.navbar.dark div#ltde-bar > #ltde_btn_holder > button,
+.navbar.bg div#market-bar > #market_btn_holder > button,
+.navbar.dark div#market-bar > #market_btn_holder > button,
+.navbar.bg div#office-bar > #office_btn_holder > button,
+.navbar.dark div#office-bar > #office_btn_holder > button {
+  color: #000;
+}
+.navbar.bg div#human-bar > #human_btn_holder > button::after,
+.navbar.dark div#human-bar > #human_btn_holder > button::after,
+.navbar.bg div#scent-bar > #scent_btn_holder > button::after,
+.navbar.dark div#scent-bar > #scent_btn_holder > button::after,
+.navbar.bg div#idea-bar > #idea_btn_holder > button::after,
+.navbar.dark div#idea-bar > #idea_btn_holder > button::after,
+.navbar.bg div#ltde-bar > #ltde_btn_holder > button::after,
+.navbar.dark div#ltde-bar > #ltde_btn_holder > button::after,
+.navbar.bg div#market-bar > #market_btn_holder > button::after,
+.navbar.dark div#market-bar > #market_btn_holder > button::after,
+.navbar.bg div#office-bar > #office_btn_holder > button::after,
+.navbar.dark div#office-bar > #office_btn_holder > button::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: black;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.navbar.bg div#human-bar > #human_btn_holder > button:focus::after,
+.navbar.dark div#human-bar > #human_btn_holder > button:focus::after,
+.navbar.bg div#scent-bar > #scent_btn_holder > button:focus:after,
+.navbar.dark div#scent-bar > #scent_btn_holder > button:focus:after,
+.navbar.bg div#idea-bar > #idea_btn_holder > button:focus:after,
+.navbar.dark div#idea-bar > #idea_btn_holder > button:focus:after,
+.navbar.bg div#ltde-bar > #ltde_btn_holder > button:focus:after,
+.navbar.dark div#ltde-bar > #ltde_btn_holder > button:focus:after,
+.navbar.bg div#market-bar > #market_btn_holder > button:focus:after,
+.navbar.dark div#market-bar > #market_btn_holder > button:focus:after {
+  width: 70px;
+}
+div#human-bar > #human_btn_holder,
+div#scent-bar > #scent_btn_holder,
+div#idea-bar > #idea_btn_holder,
+div#ltde-bar > #ltde_btn_holder,
+div#market-bar > #market_btn_holder,
+div#office-bar > #office_btn_holder {
+  float: left;
+  width: 144px;
+  height: 46px;
+}
+
+.navbar.bg div#office-bar > #office_btn_holder > button:focus:after,
+.navbar.dark div#office-bar > #office_btn_holder > button:focus:after {
+  width: 60px;
+}
+.navbar.bg div#scent-bar > #scent_btn_holder > button:focus:after,
+.navbar.dark div#scent-bar > #scent_btn_holder > button:focus:after {
+  width: 50px;
+}
+.navbar.bg div#idea-bar > #idea_btn_holder > button:focus:after,
+.navbar.dark div#idea-bar > #idea_btn_holder > button:focus:after,
+.navbar.bg div#ltde-bar > #ltde_btn_holder > button:focus:after,
+.navbar.dark div#ltde-bar > #ltde_btn_holder > button:focus:after {
+  width: 50px;
+}
+.link.active,
+.link:hover,
+.navbar.bg .link:hover,
+.navbar.bg .link.active {
+  opacity: 1;
+}
+.home-active {
+  margin-top: 50px;
+  margin-left: 250px;
+}
+.home-active a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.home-active:focus:after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: white;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.navbar.dark .home-active {
+  margin-top: -60px;
+  margin-left: 280px;
+}
+.navbar.bg .home-active a,
+.navbar.dark .home-active a {
+  color: #000;
+  text-transform: capitalize;
+}
+/* common properties for all menu buttons */
+div#human-bar > #human_btn_holder,
+div#scent-bar > #scent_btn_holder,
+div#idea-bar > #idea_btn_holder,
+div#ltde-bar > #ltde_btn_holder,
+div#market-bar > #market_btn_holder,
+div#office-bar > #office_btn_holder {
+  float: left;
+  width: 144px;
+  height: 46px;
+}
+div#human-bar > #human_btn_holder > button::after,
+div#scent-bar > #scent_btn_holder > button::after,
+div#idea-bar > #idea_btn_holder > button::after,
+div#ltde-bar > #ltde_btn_holder > button::after,
+div#market-bar > #market_btn_holder > button::after,
+div#office-bar > #office_btn_holder > button::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: white;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+div#human-bar > #human_btn_holder > button:focus::after,
+div#market-bar > #market_btn_holder > button:focus:after {
+  width: 70px;
+}
+div#office-bar > #office_btn_holder > button:focus:after {
+  width: 70px;
+}
+div#scent-bar > #scent_btn_holder > button:focus:after,
+div#idea-bar > #idea_btn_holder > button:focus:after,
+div#ltde-bar > #ltde_btn_holder > button:focus:after {
+  width: 60px;
+}
+div#human-bar > #human_btn_holder > button,
+div#scent-bar > #scent_btn_holder > button,
+div#idea-bar > #idea_btn_holder > button,
+div#ltde-bar > #ltde_btn_holder > button,
+div#market-bar > #market_btn_holder > button,
+div#office-bar > #office_btn_holder > button {
+  background: transparent;
+  margin-left: 80px;
+  color: #fff;
+  position: absolute;
+  top: 50px;
+  font-size: 25px;
+  width: 60px;
+  height: 30px;
+  border: none;
+}
+
+/*this following code shows the head menu correctly */
+
+div#human-bar > #human_panel,
+div#scent-bar > #scent_panel,
+div#idea-bar > #idea_panel,
+div#ltde-bar > #ltde_panel,
+div#market-bar > #market_panel,
+div#office-bar > #office_panel {
+  position: absolute;
+  height: 0px;
+  width: 1280px;
+  top: 110px;
+  left: 0px;
+  border-radius: 0px 0px 1px 1px;
+  overflow: hidden;
+  z-index: 10000;
+  transition: height 0.3s linear 0s;
+}
+
+div#human-bar > #human_panel > div,
+div#scent-bar > #scent_panel > div,
+div#idea-bar > #idea_panel > div,
+div#ltde-bar > #ltde_panel > div,
+div#market-bar > #market_panel > div,
+div#office-bar > #office_panel > div {
+  /* doesn't affect menu' s height */
+  position: absolute;
+  width: 1275px;
+  margin-left: 2px;
+  margin-bottom: 2px;
+  color: black;
+}
+
+/* human menu button */
+div#human-bar > #human_btn_holder > button {
+  left: 235px;
+}
+/* scent menu button */
+div#scent-bar > #scent_btn_holder > button {
+  left: 350px;
+}
+
+/* idea menu button */
+div#idea-bar > #idea_btn_holder > button {
+  left: 450px;
+}
+
+/* ltde menu button */
+div#ltde-bar > #ltde_btn_holder > button {
+  left: 540px;
+}
+
+/* market menu button */
+
+div#market-bar > #market_btn_holder > button {
+  left: 630px;
+}
+
+/* office menu button */
+
+div#office-bar > #office_btn_holder > button {
+  left: 750px;
+}
+
+/* The sliding Menu Content */
+.market_tabs {
+  padding-top: 50px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -5%);
+  width: 1280px;
+  height: 800px !important;
+  display: flex;
+  overflow: hidden;
+  background-color: #fff;
+}
+.market_tabs .tab-header {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.market_tabs .tab-header > div {
+  width: 150%;
+  height: 50px;
+  padding-left: 100px;
+  text-indent: 20px;
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+  margin-top: 40px;
+}
+.tab-header > div.active {
+  font-weight: bold;
+  color: #d5be8b;
+}
+.tab-header > div::after {
+  content: ' ';
+  background: #d5be8b;
+  width: 0%;
+  height: 2px;
+  margin-top: 30px;
+  margin-left: 10px;
+  position: fixed;
+  display: block;
+  transition: 0.2s;
+}
+.tab-header > div.active::after {
+  width: 65px;
+}
+.tab-header > .face::after {
+  width: 0%;
+  transition: 0.2s linear;
+}
+
+.tab-header > .face.active::after {
+  width: 57px;
+}
+
+.tab-header > .feet::after {
+  width: 0%;
+  transition: 0.2s linear;
+}
+
+.tab-header > .feet.active::after {
+  width: 55px;
+}
+
+.market_tabs .tab-content {
+  flex: 1;
+  position: relative;
+  padding-left: 200px;
+}
+.market_tabs .tab-content > div {
+  position: absolute;
+  height: 300px;
+  top: -50vh;
+  opacity: 0;
+  margin-left: 100px;
+}
+.market_tabs .tab-content > div.active {
+  top: 40px;
+  left: 0;
+  opacity: 1;
+}
+
+.col-1 img {
+  display: block;
+  width: 670px;
+  height: 600px;
+  left: 350px;
+  position: absolute;
+  top: -20%;
+  z-index: 1;
+}
+
+.col-1 ul {
+  width: 350px;
+  height: 400px;
+  position: relative;
+  padding-left: 120px;
+  margin-left: 30px;
+  border-left:1px solid #d5be8b;
+}
+.col-1 ul li {
+  list-style: none;
+  height: 80px;
+  padding-top: 55px;
+}
+.col-1 ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.col-1 ul li a:hover {
+  color: #d5be8b;
+  transition: 0.2s;
+}
+
+/* This is the code that shows all images correctly */
+.col-1 ul li .sub_menu_2 {
+    position: absolute;
+    background: white;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    line-height: 24px;
+    visibility: hidden;
+  }
+  .col-1 ul li:hover .sub_menu_2 {
+    visibility: visible;
+  }
+.sub_menu_1 .col-1 img {
+    width: 700px;
+    height: 600px;
+    margin-left: -150px;
+    margin-top: -50px;
+    z-index: 90;
+    background-blend-mode: normal;
+  }
+  /**/
+
+/* HUMAN - Hand */
+
+.col-1 ul li a.hand-lotion::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: #d5be8b;
+  display: block;
+  margin-right: 100px;
+  transition: 0.2s;
+}
+
+.col-1 ul li a.hand-lotion:hover::after {
+  width: 63px;
+  margin-left: -5px;
+}
+.col-1 ul li a.hand-soap::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: #d5be8b;
+  display: block;
+  margin-right: 100px;
+  transition: 0.2s;
+}
+
+.col-1 ul li a.hand-soap:hover::after {
+  width: 45px;
+  margin-left: -5px;
+}
+
+/* HUMAN - Body */
+.col-1 ul li .body-oil a {
+  font-size: 18px;
+  margin-top: -50px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.col-1 ul li a.body-cleanser::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: #d5be8b;
+  display: block;
+  margin-right: 100px;
+  transition: 0.2s;
+}
+
+.col-1 ul li a.body-cleanser:hover::after {
+  width: 82px;
+  margin-left: -5px;
+}
+.col-1 ul li a.body-oil::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: #d5be8b;
+  display: block;
+  margin-right: 100px;
+  transition: 0.2s;
+}
+
+.col-1 ul li a.body-oil:hover::after {
+  width: 32px;
+  margin-left: -3px;
+}
+.col-1 ul li a.body-scrub::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: #d5be8b;
+  display: block;
+  margin-right: 100px;
+  transition: 0.2s;
+}
+
+.col-1 ul li a.body-scrub:hover::after {
+  width: 55px;
+  margin-left: -5px;
+}
+.col-1 ul li a.body-protective::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: #d5be8b;
+  display: block;
+  margin-right: 100px;
+  transition: 0.2s;
+}
+
+.col-1 ul li a.body-protective:hover::after {
+  width: 95px;
+  margin-left: -5px;
+}
+
+/* HUMAN - Face */
+.col-1 ul li a.face-cleanser::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: #d5be8b;
+  display: block;
+  margin-right: 100px;
+  transition: 0.2s;
+}
+
+.col-1 ul li a.face-cleanser:hover::after {
+  width: 80px;
+  margin-left: -5px;
+}
+.col-1 ul li a.face-lotion::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #d5be8b;
+    display: block;
+    margin-right: 100px;
+    transition: 0.2s;
+  }
+  
+  .col-1 ul li a.face-lotion:hover::after {
+    width: 63px;
+    margin-left: -5px;
+  }
+  .col-1 ul li a.face-serum::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #d5be8b;
+    display: block;
+    margin-right: 100px;
+    transition: 0.2s;
+  }
+  
+  .col-1 ul li a.face-serum:hover::after {
+    width: 60px;
+    margin-left: -5px;
+  }
+  .col-1 ul li a.face-mist::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #d5be8b;
+    display: block;
+    margin-right: 100px;
+    transition: 0.2s;
+  }
+  
+  .col-1 ul li a.face-mist:hover::after {
+    width: 45px;
+    margin-left: -5px;
+  }
+
+  /* HUMAN - FEET :after underline effect */
+  .col-1 ul li a.feet-lotion::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #d5be8b;
+    display: block;
+    margin-right: 100px;
+    transition: 0.2s;
+  }
+  
+  .col-1 ul li a.feet-lotion:hover::after {
+    width: 60px;
+    margin-left: -5px;
+  }
+  .col-1 ul li a.feet-oil::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #d5be8b;
+    display: block;
+    margin-right: 100px;
+    transition: 0.2s;
+  }
+  
+  .col-1 ul li a.feet-oil:hover::after {
+    width: 35px;
+    margin-left: -5px;
+  }
+
+  /* SCENT  */
+
+#scent_panel .col-1 ul {
+  width: 350px;
+  height: 400px;
+  position: relative;
+  padding-left: 90px;
+  margin-left: -10px;
+  border-left:1px solid #d5be8b;
+}
+
+#scent_panel .col-1 img {
+    width: 770px;
+    height: 600px;
+    left: 300px;
+    position: absolute;
+    top: -20%;
+  }
+
+  /* SCENT - Neck /Wrist */
+
+  .tab-header > .neck::after {
+    width: 0%;
+    transition: 0.2s linear;
+  }
+  
+  .tab-header > .neck.active::after {
+    width: 110px;
+  }
+
+  .col-1 ul li a.neck-perfume::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #d5be8b;
+    display: block;
+    margin-right: 100px;
+    transition: 0.2s;
+  }
+  
+  .col-1 ul li a.neck-perfume:hover::after {
+    width: 75px;
+    margin-left: -5px;
+  }
+
+  /* SCENT - Armpit */
+
+ 
+  .tab-header > .armpit::after {
+    width: 0%;
+    transition: 0.2s linear;
+  }
+  
+  .tab-header > .armpit.active::after {
+    width: 78px;
+  }
+
+  .col-1 ul li a.armpit-deo1::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #d5be8b;
+    display: block;
+    margin-right: 100px;
+    transition: 0.2s;
+  }
+  
+  .col-1 ul li a.armpit-deo1:hover::after {
+    width: 50px;
+    margin-left: -5px;
+  }
+
+  .col-1 ul li a.armpit-deo2::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #d5be8b;
+    display: block;
+    margin-right: 100px;
+    transition: 0.2s;
+  }
+  
+  .col-1 ul li a.armpit-deo2:hover::after {
+    width: 50px;
+    margin-left: -5px;
+  }
+
+  /* IDEA Menu Panel*/
+
+ #idea_panel .market_tabs .tab-header > div {
+    width: 100%;
+    padding-left: 50px;
+  }
+
+  #idea_panel .col-1 ul {
+  
+    padding-left: 110px;
+    margin-left: -70px;
+    border-left:1px solid #d5be8b;
+  }
+  
+  #idea_panel .col-1 img {
+      width: 770px;
+      height: 600px;
+      left: 250px;
+      position: absolute;
+      top: -20%;
+    }
+
+    /* IDEA - Crafted for Conscious */
+    #idea_panel .tab-header .active::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: #d5be8b;
+        display: block;
+        margin-right: 100px;
+        transition: 0.2s;
+    }
+
+    #idea_panel .tab-header .active::after{
+        width: 213px;
+        
+    }
+
+    .col-1 ul li a.idea-crafted-test1::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: #d5be8b;
+        display: block;
+        margin-right: 100px;
+        transition: 0.2s;
+      }
+      
+      .col-1 ul li a.idea-crafted-test1:hover::after {
+        width: 97px;
+        margin-left: -5px;
+      }
+    /* IDEA - Climate */
+
+    #idea_panel .tab-header .climate::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: #d5be8b;
+        display: block;
+        margin-right: 100px;
+        transition: 0.2s;
+    }
+
+    #idea_panel .tab-header .climate.active::after{
+        width: 80px;   
+    }
+
+    .col-1 ul li a.idea-climate-test2::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: #d5be8b;
+        display: block;
+        margin-right: 100px;
+        transition: 0.2s;
+      }
+      
+      .col-1 ul li a.idea-climate-test2:hover::after {
+        width: 97px;
+        margin-left: -5px;
+      }
+     /* IDEA - Team */
+
+    #idea_panel .tab-header .team::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: #d5be8b;
+        display: block;
+        margin-right: 100px;
+        transition: 0.2s;
+    }
+
+    #idea_panel .tab-header .team.active::after{
+        width: 63px;   
+    }
+
+    .col-1 ul li a.idea-team::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: #d5be8b;
+        display: block;
+        margin-right: 100px;
+        transition: 0.2s;
+      }
+      
+      .col-1 ul li a.idea-team:hover::after {
+        width: 85px;
+        margin-left: -5px;
+      }
+
+/* LTDE */
+
+#ltde_panel .tab-header > .active::after {
+    width: 0%;
+    transition: 0.2s linear;
+  }
+  
+  #ltde_panel .tab-header > .active:hover::after {
+    width: 150px;
+  }
+  
+#ltde_panel .market_tabs .tab-header > div{
+    padding-left: 70px;
+}
+
+#ltde_panel .ltde-image img {
+    width: 790px;
+    height: 600px;
+    left: 290px;
+    position: absolute;
+    top: -20%;
+  }
+
+  #ltde_panel .col-1 ul {
+    border-left: 1px solid #d5be8b;
+    margin-left:-10px;
+    width:400px;
+    border-right: #fff;
+  }
+  #ltde_panel .col-1 ul li{
+    padding-left: 20px;
+  }
+
+  .col-1 ul li a.ltde-01::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #d5be8b;
+    display: block;
+    margin-right: 100px;
+    transition: 0.2s;
+  }
+  
+  .col-1 ul li a.ltde-01:hover::after {
+    width: 28px;
+    margin-left: -5px;
+  }
+  .col-1 ul li a.ltde-02::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #d5be8b;
+    display: block;
+    margin-right: 100px;
+    transition: 0.2s;
+  }
+  
+  .col-1 ul li a.ltde-02:hover::after {
+    width: 28px;
+    margin-left: -5px;
+  }
+
+  /* MARKET - Brands */
+
+  #market_panel .tab-header{
+    padding-right: 15px;
+  }
+  #market_panel .col-1 ul{
+    margin-left: -10px;
+  }
+  #market_panel .col-1 ul li{
+    padding-left: 10px;
+  }
+
+  #market_panel .col-1 img {
+    width: 790px;
+    height: 600px;
+    left: 310px;
+    position: absolute;
+    top: -20%;
+  }
+  #market_panel .tab-header > #market-brands.active::after {
+    width:80px;
+  }
+  #market_panel .tab-header > #market-brands:hover{
+    color: #d5be8b;
+  }
+  #market_panel .tab-header > #market-brands:hover::after {
+    width:80px;
+  }
+
+  #market_panel .tab-header > .active::after {
+    width: 0%;
+    transition: 0.2s linear;
+  }
+  
+  #market_panel .tab-header > .active:hover::after {
+    width: 80px;
+  }
+  
+  #market_panel .tab-header > .market-final:hover {
+    color: #d5be8b;
+  }
+  #market_panel .tab-header > .market-final.active::after {
+    width:106px;
+  }
+  #market_panel .tab-header > .market-final::after {
+    width: 0%;
+    transition: 0.2s linear;
+  }
+  
+  #market_panel .tab-header > .market-final:hover::after {
+    width: 106px;
+  }
+
+  #market_panel .tab-header > .market-outlet.active::after {
+    width: 80px;
+  }
+  #market_panel .tab-header > .market-outlet:hover {
+    color: #d5be8b;
+  }
+  #market_panel .tab-header > .market-outlet:hover::after {
+    width:80px;
+  }
+
+  .col-1 ul li a.market-brand::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #d5be8b;
+    display: block;
+    margin-right: 100px;
+    transition: 0.2s;
+  }
+  
+  .col-1 ul li a.market-brand:hover::after {
+    width: 60px;
+    margin-left: -5px;
+  }
+
+  .col-1 ul li a.market-picks1::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #d5be8b;
+    display: block;
+    margin-right: 100px;
+    transition: 0.2s;
+  }
+  
+  .col-1 ul li a.market-picks1:hover::after {
+    width: 60px;
+    margin-left: -5px;
+  }
+  .col-1 ul li a.market-picks2::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #d5be8b;
+    display: block;
+    margin-right: 100px;
+    transition: 0.2s;
+  }
+  
+  .col-1 ul li a.market-picks2:hover::after {
+    width: 60px;
+    margin-left: -5px;
+  }
+
+  /* OFFICE Menu Panel*/
+
+  #office_panel .market_tabs .tab-header {
+    padding-right: 40px;
+  }
+
+  #office_panel .office-contactImage img {
+    width: 790px;
+    height: 600px;
+    left: 230px;
+    position: absolute;
+    top: -20%;
+  }
+
+  #office_panel .tab-header .contact:hover{
+    color: #d5be8b;
+  }
+  #office_panel .tab-header > .contact::after {
+    width: 0%;
+    transition: 0.2s linear;
+  }
+  
+  #office_panel .tab-header > .contact:hover::after {
+    width: 155px;
+  }
+  #office_panel .tab-header > .contact.active::after {
+    width: 155px;
+  }
+
+  .col-1 ul li a.office-contact::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #d5be8b;
+    display: block;
+    margin-right: 100px;
+    transition: 0.2s;
+  }
+  
+  .col-1 ul li a.office-contact:hover::after {
+    width: 95px;
+    margin-left: -5px;
+  }
+  #office_panel .tab-header .press:hover{
+    color: #d5be8b;
+  }
+  #office_panel .tab-header > .press::after {
+    width: 0%;
+    transition: 0.2s linear;
+  }
+  
+  #office_panel .tab-header > .press:hover::after {
+    width: 65px;
+  }
+  #office_panel .tab-header > .press.active::after {
+    width: 65px;
+  }
+  
+  #office_panel .tab-header > div{
+    padding-left: 70px;
+    padding-right: 30px;
+  }
+
+  #office_panel .tab-content .col-1 ul{
+    margin-left: -85px;
+  }
+
+  #office_panel .tab-content .col-1 ul li{
+    margin-left: -20px !important;
+  }
+
+  #office_panel .office-pressImage img {
+    width: 790px;
+    height: 600px;
+    left: 230px;
+    position: absolute;
+    top: -20%;
+  }
+
+  .col-1 ul li a.office-press::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #d5be8b;
+    display: block;
+    margin-right: 100px;
+    transition: 0.2s;
+  }
+  
+  .col-1 ul li a.office-press:hover::after {
+    width: 50px;
+    margin-left: -5px;
+  }
+
+    
+
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+        <a href="index.html"> 
+            <img src="img/logo_1.png" class="logo"> 
+         </a>
+ 
+         <div class="user-interactions">
+            <div class="search-box">
+                <input type="text" class="search" placeholder="search item">
+                <button class="search-btn">
+                    <a><i class="uil uil-search"></i></a>
+                </button>      
+            </div>
+             <div class="cart" onclick="location.href = '/cart'">
+                <a class="cart-icon">
+                    <i class="uil uil-shopping-basket"></i>
+                </a>
+                 <span class="cart-item-count">00</span>
+             </div>
+             <div class="user">
+                 <a class="user-icon">
+                    <i class="uil uil-user"></i>
+                </a>
+                 <div class="user-icon-popup">
+                     <p>login to your account</p>
+                     <a>login</a>
+                 </div>
+             </div>
+         </div>
+         
+         <div id="human-bar">
+         <div id="human_btn_holder">
+            <button onclick="toggleHuman('human_panel')">Human</button>
+        </div>
+        <div id="human_panel">
+        <div class="tabs">
+            <div class="market_tabs">
+                <div class="tab-header">
+                    <div class="active">Hand</div>
+                    <div>Body</div>
+                    <div class="face">Face</div>
+                    <div class="feet">Feet</div>
+                </div>
+                <div class="tab-content">
+                    <div class="active">
+                        <div class="tab-first">
+                            <div class="sub_menu_1">
+                                <div class="col-1">
+                                    <ul>
+                                        <li><a href="Hand Lotion.html" class="hand-lotion">Lotion</a>
+                                            <div class="sub_menu_2">
+                                                <div class="col-2">
+                                                    <img src="img/Hand Lotion.png">                                                                                                               </div>
+                                                </div> 
+                                                                                                                                                                         
+                                        </li>
+                                        <li><a href="Soap.html" class="hand-soap">Soap</a>
+                                            <div class="sub_menu_2">
+                                                <div class="col-2">
+                                                    <img src="img/Hand Soap.png">
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul> 
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="col-1" id="hands">
+                            <img src="img/Hands.png">
+                        </div>     
+                    </div>
+                   
+                    <div class="tab-others"> 
+                        <div class="tab-body">
+                            <div class="sub_menu_1">
+                                <div class="col-1">
+                                    <ul>
+                                        <li><a href="bodyCleanser.html" class="body-cleanser">Cleanser</a>
+                                            <div class="sub_menu_2">
+                                                <div class="col-2">
+                                                    <img src="img/Body Cleanser.png">                                                                                                               </div>
+                                                </div> 
+                                                                                                                 
+                                        </li>
+                                        <li><a href="bodyOil.html" class="body-oil">Oil</a>
+                                            <div class="sub_menu_2">
+                                                <div class="col-2">
+                                                    <img src="img/Body Oil.jpg">
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li><a href="bodyScrub.html" class="body-scrub">Scrub</a>
+                                            <div class="sub_menu_2">
+                                                <div class="col-2">
+                                                    <img src="img/Body Scrub.png">                                                                                                               </div>
+                                                </div> 
+                                                                                                            
+                                        </li>
+                                        <li><a href="bodyProtective.html" class="body-protective">Protective</a>
+                                            <div class="sub_menu_2">
+                                                <div class="col-2">
+                                                    <img src="img/Body Protective.png">
+                                                </div>
+                                            </div>
+                                        </li> 
+                                    </ul> 
+                                </div>                                
+                            </div> 
+                        </div> 
+                        <div class="col-1">
+                            <img src="img/Body.png">
+                        </div>
+                    </div>
+                  
+                     <div class="tab-others">        
+                        <div class="tab-face">
+                            <div class="sub_menu_1">
+                                <div class="col-1">
+                                    <ul>
+                                        <li><a href="faceCleanser.html" class="face-cleanser">Cleanser</a>
+                                            <div class="sub_menu_2">
+                                                <div class="col-2">
+                                                    <img src="img/Face Cleanser.png">                                                                                                               </div>
+                                                </div>                                                                    
+                                        </li>
+                                        <li><a href="faceLotion.html" class="face-lotion">Lotion</a>
+                                            <div class="sub_menu_2">
+                                                <div class="col-2">
+                                                    <img src="img/Face Lotion.png">
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li><a href="faceSerum.html" class="face-serum">Serum</a>
+                                            <div class="sub_menu_2">
+                                                <div class="col-2">
+                                                    <img src="img/Face Serum.jpg">                                                                                                               </div>
+                                                </div>                                                               
+                                        </li>
+                                        <li><a href="faceMist.html" class="face-mist">Mist</a>
+                                            <div class="sub_menu_2">
+                                                <div class="col-2">
+                                                    <img src="img/Face Mist.png">
+                                                </div>
+                                            </div>
+                                        </li> 
+                                    </ul> 
+                                </div>                                
+                            </div> 
+                        </div> 
+                        <div class="col-1">
+                            <img src="img/Face.png">
+                        </div>
+                     </div>    
+                     <div class="tab-others">                          
+                        <div class="tab-first">
+                            <div class="sub_menu_1">
+                                <div class="col-1">
+                                    <ul>
+                                        <li><a href="footLotion.html" class="feet-lotion">Lotion</a>
+                                            <div class="sub_menu_2">
+                                                <div class="col-2">
+                                                    <img src="img/Foot Lotion.png">
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li><a href="footOil.html" class="feet-oil">Oil</a>
+                                            <div class="sub_menu_2">
+                                                <div class="col-2">
+                                                    <img src="img/Foot Oil.png">
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <img src="img/Feet.png">
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+<div id="scent-bar">
+    <div id="scent_btn_holder">
+        <button onclick="toggleScent('scent_panel')">Scent</button>
+    </div>
+    <div id="scent_panel">
+        <div class="tab">
+            <div class="market_tabs">
+                <div class="tab-header">
+                    <div class="active neck">Neck/Wrist</div>
+                    <div class="armpit">Armpit</div>
+                </div>
+                <div class="tab-content">
+                <div class="active">
+                    <div class="tab-first">
+                        <div class="sub_menu_1">
+                            <div class="col-1">
+                                <ul>
+                                    <li><a href="Hand Lotion.html" class="neck-perfume">Perfume</a>
+                                        <div class="sub_menu_2">
+                                            <div class="col-2">
+                                                <img src="img/Hand Lotion.png">                                                                                                               </div>
+                                            </div> 
+                                                                                                                                                                     
+                                    </li>
+                                    
+                                </ul> 
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <img src="img/Hands.png">
+                    </div>     
+                </div>
+               
+                <div class="tab-others"> 
+                    <div class="tab-body">
+                        <div class="sub_menu_1">
+                            <div class="col-1">
+                                <ul>
+                                    <li><a href="#" class="armpit-deo1">Deo 1</a>
+                                        <div class="sub_menu_2">
+                                            <div class="col-2">
+                                                <img src="img/Body Cleanser.png">                                                                                                               </div>
+                                            </div> 
+                                                                                                             
+                                    </li>
+                                    <li><a href="#" class="armpit-deo2">Deo 2</a>
+                                        <div class="sub_menu_2">
+                                            <div class="col-2">
+                                                <img src="img/Body Scrub.png">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul> 
+                            </div>                                
+                        </div> 
+                    </div> 
+                    <div class="col-1">
+                        <img src="img/Body.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="idea-bar">
+    <div id="idea_btn_holder">
+        <button onclick="toggleIdea('idea_panel')">Idea</button>
+    </div>
+    <div id="idea_panel">
+        <div class="tab">
+            <div class="market_tabs">
+                <div class="tab-header">
+                    <div class="active crafted">Crafted for Conscious</div>
+                    <div class="climate">Climate</div>
+                    <div class="team">Team</div>
+                </div>
+                <div class="tab-content">
+                    <div class="active">
+                        <div class="tab-first">
+                            <div class="sub_menu_1">
+                                <div class="col-1">
+                                    <ul>
+                                        <li><a href="Hand Lotion.html" class="idea-crafted-test1">Fixar Test 1</a>
+                                            <div class="sub_menu_2">
+                                                <div class="col-2">
+                                                    <img src="img/Hand Lotion.png">                                                                                                               </div>
+                                                </div> 
+                                                                                                                                                                         
+                                        </li>
+                                    </ul> 
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <img src="img/Hands.png">
+                        </div>     
+                    </div>
+                   
+                    <div class="tab-others"> 
+                        <div class="tab-body">
+                            <div class="sub_menu_1">
+                                <div class="col-1">
+                                    <ul>
+                                        <li><a href="#" class="idea-climate-test2">Fixar Test 2</a>
+                                            <div class="sub_menu_2">
+                                                <div class="col-2">
+                                                    <img src="img/Body Cleanser.png">                                                                                                               </div>
+                                                </div> 
+                                                                                                                 
+                                        </li> 
+                                    </ul> 
+                                </div>                                
+                            </div> 
+                        </div> 
+                        <div class="col-1">
+                            <img src="img/Body.png">
+                        </div>
+                    </div>
+                  
+                    <div class="tab-others">        
+                        <div class="tab-face">
+                            <div class="sub_menu_1">
+                                <div class="col-1">
+                                    <ul>
+                                        <li><a href="#" class="idea-team">Our Team</a>
+                                            <div class="sub_menu_2">
+                                                <div class="col-2">
+                                                    <img src="img/Face Cleanser.png">                                                                                                               </div>
+                                                </div>                                                                    
+                                        </li>
+                                    </ul> 
+                                </div>                                
+                            </div> 
+                        </div> 
+                        <div class="col-1">
+                            <img src="img/Face.png">
+                        </div>
+                    </div>              
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+<div id="ltde-bar">
+    <div id="ltde_btn_holder">
+        <button onclick="toggleLtde('ltde_panel')">Ltde</button>
+    </div>
+    <div id="ltde_panel">
+        <div class="tab">
+            <div class="market_tabs">
+                <div class="tab-header">
+                    <div class="active">Limited Edition</div>
+                    
+                </div>
+                <div class="tab-content">
+                <div class="active">
+                    <div class="tab-first">
+                        <div class="sub_menu_1">
+                            <div class="col-1">
+                                <ul>
+                                    <li><a href="Hand Lotion.html" class="ltde-01">01</a>
+                                        <div class="sub_menu_2">
+                                            <div class="col-2">
+                                                <img src="img/Hand Lotion.png" alt="hand lotion">                                                                                                               </div>
+                                            </div> 
+                                                                                                                                                                     
+                                    </li>
+                                    <li><a href="#" class="ltde-02">02</a>
+                                        <div class="sub_menu_2">
+                                            <div class="col-2">
+                                                <img src="img/Body Oil.jpg" alt="body oil">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                </ul> 
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="col-1 ltde-image">
+                        <img src="img/Hands.png">
+                    </div>     
+                </div>
+               
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div id="market-bar">
+    <div id="market_btn_holder">
+        <button onclick="toggleMarket('market_panel')">Market</button>
+    </div>
+    <div id="market_panel">
+        <div class="tabs">
+            <div class="market_tabs">
+                <div class="tab-header">
+                    <div id="market-brands" class="active">Brands</div>
+                    <div class="market-final">Final Call </div>
+                    <div class="market-outlet">Outlet</div>
+                </div>
+                <div class="tab-content">
+                    <div class="active">
+                        <div class="tab-first">
+                            <div class="sub_menu_1">
+                                <div class="col-1">
+                                    <ul>
+                                        <li><a href="Soap.html" class="market-brand">Brand</a>
+                                            <div class="sub_menu_2">
+                                                <div class="col-2">
+                                                    <img src="img/Hand Soap.png">
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul> 
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <img src="img/Hands.png">
+                        </div>     
+                    </div>
+                   
+                    <div class="tab-others"> 
+                        <div class="tab-body">
+                            <div class="sub_menu_1">
+                                <div class="col-1">
+                                    <ul>
+                                        <li><a href="#" class="market-picks1">Picks 1</a>
+                                            <div class="sub_menu_2">
+                                                <div class="col-2">
+                                                    <img src="img/Body Protective.png">
+                                                </div>
+                                            </div>
+                                        </li> 
+                                    </ul> 
+                                </div>                                
+                            </div> 
+                        </div> 
+                        <div class="col-1">
+                            <img src="img/Body.png">
+                        </div>
+                    </div>
+                  
+                     <div class="tab-others">        
+                        <div class="tab-face">
+                            <div class="sub_menu_1">
+                                <div class="col-1">
+                                    <ul>
+                                        <li><a href="#" class="market-picks2">Picks 2</a>
+                                            <div class="sub_menu_2">
+                                                <div class="col-2">
+                                                    <img src="img/Face Lotion.png">
+                                                </div>
+                                            </div>
+                                        </li> 
+                                    </ul> 
+                                </div>                                
+                            </div> 
+                        </div> 
+                        <div class="col-1">
+                            <img src="img/Face.png">
+                        </div>
+                     </div>    
+                         
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+
+<div id="office-bar">
+    <div id="office_btn_holder">
+        <button onclick="toggleOffice('office_panel')">Office</button>
+    </div>
+    <div id="office_panel">
+        <div class="tab">
+            <div class="market_tabs">
+                <div class="tab-header">
+                    <div class="active contact">Contact details</div>
+                    <div class="press">Press</div>
+                </div>
+                <div class="tab-content">
+                    <div class="active">
+                        <div class="tab-hand">
+                            <div class="sub_menu_1">
+                                <div class="col-1">
+                                   <ul>
+                                       <li><a href="contact.html" class="office-contact">Contact us</a>
+                                            <div class="sub_menu_2">
+                                                <div class="col-2">
+                                                    <img src="img/Deo1.png">                                                                                                               </div>
+                                                </div>                                                                                                                            
+                                        </li>
+                                   </ul> 
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="col-1 office-contactImage">
+                            <img src="img/Hands.png">
+                        </div>     
+                     </div>
+               
+                    <div class="tab-others"> 
+                        <div class="tab-body">
+                            <div class="sub_menu_1">
+                                <div class="col-1">
+                                    <ul>
+                                   
+                                        <li><a href="#" class="office-press">Press</a>
+                                            <div class="sub_menu_2">
+                                                <div class="col-2">
+                                                    <img src="img/product-1.jpg">
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul> 
+                                </div>                                
+                            </div> 
+                        </div> 
+                        <div class="col-1 office-pressImage">
+                            <img src="img/Deo2.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </nav>
+    <script>
+
+        //menu bar functions
+function toggleHuman(x) {
+    var panel = document.getElementById(x),
+      maxH = '570px';
+  
+    if (panel.style.height == maxH) {
+      panel.style.height = '0px';
+    } else {
+      panel.style.height = maxH;
+    }
+  }
+  function toggleScent(x) {
+    var panel = document.getElementById(x),
+      maxH = '580px';
+  
+    if (panel.style.height == maxH) {
+      panel.style.height = '0px';
+    } else {
+      panel.style.height = maxH;
+    }
+  }
+  function toggleIdea(x) {
+    var panel = document.getElementById(x),
+      maxH = '580px';
+  
+    if (panel.style.height == maxH) {
+      panel.style.height = '0px';
+    } else {
+      panel.style.height = maxH;
+    }
+  }
+  function toggleLtde(x) {
+    var panel = document.getElementById(x),
+      maxH = '580px';
+  
+    if (panel.style.height == maxH) {
+      panel.style.height = '0px';
+    } else {
+      panel.style.height = maxH;
+    }
+  }
+  function toggleMarket(x) {
+    var panel = document.getElementById(x),
+      maxH = '580px';
+  
+    if (panel.style.height == maxH) {
+      panel.style.height = '0px';
+    } else {
+      panel.style.height = maxH;
+    }
+  }
+  function toggleOffice(x) {
+    var panel = document.getElementById(x),
+      maxH = '580px';
+  
+    if (panel.style.height == maxH) {
+      panel.style.height = '0px';
+    } else {
+      panel.style.height = maxH;
+    }
+  }
+/*
+  let tabHeaders = document.querySelectorAll(
+        '.market_tabs .tab-header > div'
+      );
+      let tabContents = document.querySelectorAll(
+        '.market_tabs .tab-content > div'
+      );
+
+      for (let i = 0; i < tabHeaders.length; i++) {
+        tabHeaders[i].addEventListener('click', function () {
+          document
+            .querySelector('.market_tabs .tab-header > .active')
+            .classList.remove('active');
+          tabHeaders[i].classList.add('active');
+
+          document
+            .querySelector('.market_tabs .tab-content > .active')
+            .classList.remove('active');
+          tabContents[i].classList.add('active');
+        });
+      }
+*/
+ 
+/* HUMAN Menu Functions */
+let tabHeader_human = document.querySelectorAll(
+    '#human_panel .market_tabs .tab-header > div'
+  );
+  let tabContent_human = document.querySelectorAll(
+    '#human_panel .market_tabs .tab-content > div'
+  );
+
+  for (let i = 0; i < tabHeader_human.length; i++) {
+    tabHeader_human[i].addEventListener('click', function () {
+      document
+        .querySelector('#human_panel .market_tabs .tab-header > .active')
+        .classList.remove('active');
+      tabHeader_human[i].classList.add('active');
+
+      document
+        .querySelector('#human_panel .market_tabs .tab-content > .active')
+        .classList.remove('active');
+      tabContent_human[i].classList.add('active');
+    });
+  }
+
+/* SCENT Menu Functions */
+let tabHeader_scent = document.querySelectorAll(
+    '#scent_panel .market_tabs .tab-header > div'
+  );
+  let tabContent_scent = document.querySelectorAll(
+    '#scent_panel .market_tabs .tab-content > div'
+  );
+
+  for (let i = 0; i < tabHeader_scent.length; i++) {
+    tabHeader_scent[i].addEventListener('click', function () {
+      document
+        .querySelector('#scent_panel .market_tabs .tab-header > .active')
+        .classList.remove('active');
+      tabHeader_scent[i].classList.add('active');
+
+      document
+        .querySelector('#scent_panel .market_tabs .tab-content > .active')
+        .classList.remove('active');
+      tabContent_scent[i].classList.add('active');
+    });
+  }
+
+  /* IDEA Menu Functions */
+let tabHeader_idea = document.querySelectorAll(
+    '#idea_panel .market_tabs .tab-header > div'
+  );
+  let tabContent_idea = document.querySelectorAll(
+    '#idea_panel .market_tabs .tab-content > div'
+  );
+
+  for (let i = 0; i < tabHeader_idea.length; i++) {
+    tabHeader_idea[i].addEventListener('click', function () {
+      document
+        .querySelector('#idea_panel .market_tabs .tab-header > .active')
+        .classList.remove('active');
+      tabHeader_idea[i].classList.add('active');
+
+      document
+        .querySelector('#idea_panel .market_tabs .tab-content > .active')
+        .classList.remove('active');
+      tabContent_idea[i].classList.add('active');
+    });
+  }
+
+  /* LTDE Menu Functions */
+let tabHeader_ltde = document.querySelectorAll(
+    '#ltde_panel .market_tabs .tab-header > div'
+  );
+  let tabContent_ltde = document.querySelectorAll(
+    '#ltde_panel .market_tabs .tab-content > div'
+  );
+
+  for (let i = 0; i < tabHeader_ltde.length; i++) {
+    tabHeader_ltde[i].addEventListener('click', function () {
+      document
+        .querySelector('#ltde_panel .market_tabs .tab-header > .active')
+        .classList.remove('active');
+      tabHeader_ltde[i].classList.add('active');
+
+      document
+        .querySelector('#ltde_panel .market_tabs .tab-content > .active')
+        .classList.remove('active');
+      tabContent_ltde[i].classList.add('active');
+    });
+  }
+
+  /* MARKET Menu Functions */
+let tabHeader_market = document.querySelectorAll(
+    '#market_panel .market_tabs .tab-header > div'
+  );
+  let tabContent_market = document.querySelectorAll(
+    '#market_panel .market_tabs .tab-content > div'
+  );
+
+  for (let i = 0; i < tabHeader_market.length; i++) {
+    tabHeader_market[i].addEventListener('click', function () {
+      document
+        .querySelector('#market_panel .market_tabs .tab-header > .active')
+        .classList.remove('active');
+      tabHeader_market[i].classList.add('active');
+
+      document
+        .querySelector('#market_panel .market_tabs .tab-content > .active')
+        .classList.remove('active');
+      tabContent_market[i].classList.add('active');
+    });
+  }
+
+  /* OFFICE Menu Functions */
+let tabHeader_office = document.querySelectorAll(
+        '#office_panel .market_tabs .tab-header > div'
+      );
+      let tabContent_office = document.querySelectorAll(
+        '#office_panel .market_tabs .tab-content > div'
+      );
+
+      for (let i = 0; i < tabHeader_office.length; i++) {
+        tabHeader_office[i].addEventListener('click', function () {
+          document
+            .querySelector('#office_panel .market_tabs .tab-header > .active')
+            .classList.remove('active');
+          tabHeader_office[i].classList.add('active');
+
+          document
+            .querySelector('#office_panel .market_tabs .tab-content > .active')
+            .classList.remove('active');
+          tabContent_office[i].classList.add('active');
+        });
+      }
+     
+
+
+    </script>
+  
+  </body>
+</html>

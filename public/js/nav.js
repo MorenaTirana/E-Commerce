@@ -593,6 +593,139 @@ function toggleOffice(x) {
   }
 }
 
+/* HUMAN Menu Functions */
+let tabHeader_human = document.querySelectorAll(
+  '#human_panel .market_tabs .tab-header > div'
+);
+let tabContent_human = document.querySelectorAll(
+  '#human_panel .market_tabs .tab-content > div'
+);
+
+for (let i = 0; i < tabHeader_human.length; i++) {
+  tabHeader_human[i].addEventListener('click', function () {
+    document
+      .querySelector('#human_panel .market_tabs .tab-header > .active')
+      .classList.remove('active');
+    tabHeader_human[i].classList.add('active');
+
+    document
+      .querySelector('#human_panel .market_tabs .tab-content > .active')
+      .classList.remove('active');
+    tabContent_human[i].classList.add('active');
+  });
+}
+
+/* SCENT Menu Functions */
+let tabHeader_scent = document.querySelectorAll(
+  '#scent_panel .market_tabs .tab-header > div'
+);
+let tabContent_scent = document.querySelectorAll(
+  '#scent_panel .market_tabs .tab-content > div'
+);
+
+for (let i = 0; i < tabHeader_scent.length; i++) {
+  tabHeader_scent[i].addEventListener('click', function () {
+    document
+      .querySelector('#scent_panel .market_tabs .tab-header > .active')
+      .classList.remove('active');
+    tabHeader_scent[i].classList.add('active');
+
+    document
+      .querySelector('#scent_panel .market_tabs .tab-content > .active')
+      .classList.remove('active');
+    tabContent_scent[i].classList.add('active');
+  });
+}
+
+/* IDEA Menu Functions */
+let tabHeader_idea = document.querySelectorAll(
+  '#idea_panel .market_tabs .tab-header > div'
+);
+let tabContent_idea = document.querySelectorAll(
+  '#idea_panel .market_tabs .tab-content > div'
+);
+
+for (let i = 0; i < tabHeader_idea.length; i++) {
+  tabHeader_idea[i].addEventListener('click', function () {
+    document
+      .querySelector('#idea_panel .market_tabs .tab-header > .active')
+      .classList.remove('active');
+    tabHeader_idea[i].classList.add('active');
+
+    document
+      .querySelector('#idea_panel .market_tabs .tab-content > .active')
+      .classList.remove('active');
+    tabContent_idea[i].classList.add('active');
+  });
+}
+
+/* LTDE Menu Functions */
+let tabHeader_ltde = document.querySelectorAll(
+  '#ltde_panel .market_tabs .tab-header > div'
+);
+let tabContent_ltde = document.querySelectorAll(
+  '#ltde_panel .market_tabs .tab-content > div'
+);
+
+for (let i = 0; i < tabHeader_ltde.length; i++) {
+  tabHeader_ltde[i].addEventListener('click', function () {
+    document
+      .querySelector('#ltde_panel .market_tabs .tab-header > .active')
+      .classList.remove('active');
+    tabHeader_ltde[i].classList.add('active');
+
+    document
+      .querySelector('#ltde_panel .market_tabs .tab-content > .active')
+      .classList.remove('active');
+    tabContent_ltde[i].classList.add('active');
+  });
+}
+
+/* MARKET Menu Functions */
+let tabHeader_market = document.querySelectorAll(
+  '#market_panel .market_tabs .tab-header > div'
+);
+let tabContent_market = document.querySelectorAll(
+  '#market_panel .market_tabs .tab-content > div'
+);
+
+for (let i = 0; i < tabHeader_market.length; i++) {
+  tabHeader_market[i].addEventListener('click', function () {
+    document
+      .querySelector('#market_panel .market_tabs .tab-header > .active')
+      .classList.remove('active');
+    tabHeader_market[i].classList.add('active');
+
+    document
+      .querySelector('#market_panel .market_tabs .tab-content > .active')
+      .classList.remove('active');
+    tabContent_market[i].classList.add('active');
+  });
+}
+
+/* OFFICE Menu Functions */
+let tabHeader_office = document.querySelectorAll(
+  '#office_panel .market_tabs .tab-header > div'
+);
+let tabContent_office = document.querySelectorAll(
+  '#office_panel .market_tabs .tab-content > div'
+);
+
+for (let i = 0; i < tabHeader_office.length; i++) {
+  tabHeader_office[i].addEventListener('click', function () {
+    document
+      .querySelector('#office_panel .market_tabs .tab-header > .active')
+      .classList.remove('active');
+    tabHeader_office[i].classList.add('active');
+
+    document
+      .querySelector('#office_panel .market_tabs .tab-content > .active')
+      .classList.remove('active');
+    tabContent_office[i].classList.add('active');
+  });
+}
+
+/*
 let tabHeaders = document.querySelectorAll('.market_tabs .tab-header > div');
 let tabContents = document.querySelectorAll('.market_tabs .tab-content > div');
 
@@ -628,6 +761,7 @@ for (let i = 0; i < tabHandLists.length; i++) {
     tabHandImages[i].classList.add('active');
   });
 }
+*/
 
 // user icon popup
 let userIcon = document.querySelector('.user-icon');

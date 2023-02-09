@@ -343,11 +343,31 @@ div#office-bar > #office_btn_holder > button {
   transition: 0.2s;
 }
 
-/* HUMAN - Hand */
-
-.col-1 a.hand-lotion:hover ~ #hands{
-    display: none; 
+/* This is the code that shows all images correctly */
+.col-1 ul li .sub_menu_2 {
+    position: absolute;
+    background: white;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    line-height: 24px;
+    visibility: hidden;
   }
+  .col-1 ul li:hover .sub_menu_2 {
+    visibility: visible;
+  }
+.sub_menu_1 .col-1 img {
+    width: 700px;
+    height: 600px;
+    margin-left: -150px;
+    margin-top: -50px;
+    z-index: 90;
+    background-blend-mode: normal;
+  }
+  /**/
+
+/* HUMAN - Hand */
 
 .col-1 ul li a.hand-lotion::after {
   content: '';
@@ -377,10 +397,6 @@ div#office-bar > #office_btn_holder > button {
   width: 45px;
   margin-left: -5px;
 }
-
-.col-1 ul li .hand-lotion:hover .col-1 img{
-    display: none;
-} 
 
 /* HUMAN - Body */
 .col-1 ul li .body-oil a {
