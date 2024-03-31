@@ -52,7 +52,7 @@ button{
      position: relative;
      right:0;
      bottom:0;
-     min-width: 100%;
+     min-width: 10%;
      min-height: 500px;
      background-color: #000;
      margin-bottom: 0;
